@@ -29,6 +29,7 @@
         "dv": 1
     },
     "api": {
-        "date": "https://timeapi.io/api/Time/current/zone?timeZone=Etc/UTC"
+        "date": "https://timeapi.io/api/Time/current/zone?timeZone=Etc/UTC",
+        "date_fallback": "https://worldtimeapi.org/api/timezone/Etc/UTC"
     }
 }
