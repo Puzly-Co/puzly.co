@@ -27,5 +27,8 @@
         "start": { "month": 1, "year": 2022 },
         "latest": { "month": 12, "year": 2022 },
         "dv": 1
+    },
+    "api": {
+        "date": "https://worldtimeapi.org/api/timezone/Etc/UTC"
     }
 }
