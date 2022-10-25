@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>{{ page.title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body class="{{ page.body_class }}">
+    <header class="header">
+        <a href="/" class="logo"><img src="/images/logo.png" alt="Puzly.Co"></a>
+        <input class="menu-button" type="checkbox" id="menu-button" />
+        <label class="menu-icon" for="menu-button"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li><a href="/#about" onclick="document.getElementById('menu-button').checked=false;">ABOUT</a></li>
+            <li><a href="/#games" onclick="document.getElementById('menu-button').checked=false;">GAMES</a></li>
+        </ul>
+    </header>
+
+    {{ content | remove: '<p>' | remove: '</p>' }}
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Puzly.Co</h4>
+                    <ul>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#games">Games</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="/privacy.html">Privacy Policy</a></li>
+                        <li><a href="/tos.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>social media</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/PuzlyCo"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/PuzlyCo"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/PuzlyCo"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/PuzlyCo"><i class="fab fa-youtube"></i></a>
+                        <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
