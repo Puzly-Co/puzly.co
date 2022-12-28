@@ -1,22 +1,22 @@
 {
     "android": {
-        "build": 2,
-        "version": "22.1.1",
+        "build": 3,
+        "version": "23.1.0",
         "url": "https://play.google.com/store/apps/details?id=co.puzly.bhko",
         "other_languages": [{
-            "name": "FLWG",
+            "name": "Four-Letter Word Game",
             "language": "English",
             "url": "https://play.google.com/store/apps/details?id=co.puzly.flwg",
             "status": "beta"
         }],
         "other_games": [{
-                "name": "AHKO",
+                "name": "Altı Harfli Kelime Oyunu",
                 "language": "Türkçe",
                 "url": "https://play.google.com/store/apps/details?id=co.puzly.ahko",
                 "status": "beta"
             },
             {
-                "name": "YHKO",
+                "name": "Yedi Harfli Kelime Oyunu",
                 "language": "Türkçe",
                 "url": "https://play.google.com/store/apps/details?id=co.puzly.yhko",
                 "status": "beta"
@@ -24,8 +24,8 @@
         ]
     },
     "game": {
-        "start": { "month": 1, "year": 2022 },
-        "latest": { "month": 12, "year": 2022 },
+        "start": { "month": 12, "year": 2022 },
+        "latest": { "month": 12, "year": 2023 },
         "dv": 1
     },
     "api": {
