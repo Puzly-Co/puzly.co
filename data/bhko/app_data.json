@@ -1,10 +1,11 @@
 {
     "android": {
         "build": 3,
+        "minSupportedBuild": 3,
         "version": "23.1.0",
         "url": "https://play.google.com/store/apps/details?id=co.puzly.bhko",
         "other_languages": [{
-            "name": "Four-Letter Word Game",
+            "name": "Five-Letter Word Game",
             "language": "English",
             "url": "https://play.google.com/store/apps/details?id=co.puzly.flwg",
             "status": "beta"
