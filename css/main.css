@@ -71,7 +71,7 @@ body.page-legal {
 }
 
 .games-section .section-title {
-    color: #ffdd44;
+    color: #d1a105;
     margin-top: 50px;
 }
 
@@ -80,7 +80,16 @@ body.page-legal {
 }
 
 .games-section .section-text {
-    color: #f5eeee;
+    color: #444;
+}
+
+.games-section .section-badge {
+    text-align: center;
+}
+
+.games-section .section-badge img {
+    margin-top: 30;
+    margin-right: 40;
 }
 
 .section-title span {

@@ -1,9 +1,14 @@
 .header {
-    background-color: #fff;
+    background-color: #9ddab5;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     position: fixed;
     width: 100%;
     z-index: 3;
+}
+
+.header-contents {
+    max-width: 1120px;
+    margin: 0 auto;
 }
 
 .header a {
@@ -16,7 +21,6 @@
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #fff;
 }
 
 .header ul a {
@@ -27,7 +31,11 @@
 }
 
 .header ul a:hover {
-    background-color: #e1eceb;
+    background-color: #b9e7cb;
+}
+
+.header li {
+    text-align: right;
 }
 
 .header .logo {

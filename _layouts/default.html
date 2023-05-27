@@ -14,16 +14,19 @@
 
 <body class="{{ page.body_class }}">
     <header class="header">
-        <a href="/" class="logo"><img src="/images/logo.png" alt="Puzly.Co"></a>
-        <input class="menu-button" type="checkbox" id="menu-button" />
-        <label class="menu-icon" for="menu-button"><span class="nav-icon"></span></label>
-        <ul class="menu">
-            <li><a href="/#about" onclick="document.getElementById('menu-button').checked=false;">ABOUT</a></li>
-            <li><a href="/#games" onclick="document.getElementById('menu-button').checked=false;">GAMES</a></li>
-        </ul>
+        <div class="header-contents">
+            <a href="/" class="logo"><img src="/images/logo-header.png" alt="Puzly.Co"></a>
+            <input class="menu-button" type="checkbox" id="menu-button" />
+            <label class="menu-icon" for="menu-button"><span class="nav-icon"></span></label>
+            <ul class="menu">
+                <li><a href="/#about" onclick="document.getElementById('menu-button').checked=false;">ABOUT</a></li>
+                <li><a href="/#games" onclick="document.getElementById('menu-button').checked=false;">GAMES</a></li>
+            </ul>
+        </div>
     </header>
 
-    {{ content | remove: '<p>' | remove: '</p>' }}
+    {{ content | remove: '
+    <p>' | remove: '</p>' }}
 
     <footer class="footer">
         <div class="container">
@@ -45,11 +48,11 @@
                 <div class="footer-col">
                     <h4>social media</h4>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/PuzlyCo"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/PuzlyCo"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/PuzlyCo"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/@PuzlyCo"><i class="fab fa-youtube"></i></a>
-                        <!-- <a href="#"><i class="fab fa-linkedin-in"></i></a> -->
+                        <a href="https://www.facebook.com/PuzlyCo" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/PuzlyCo" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <!-- <a href="https://www.instagram.com/PuzlyCo" target="_blank"><i class="fab fa-instagram"></i></a> -->
+                        <a href="https://www.youtube.com/@PuzlyCo" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <!-- <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a> -->
                     </div>
                 </div>
             </div>
