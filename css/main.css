@@ -100,6 +100,57 @@ body.page-legal {
     font-weight: bolder;
 }
 
+section.helper-content {
+    margin-top: 100px;
+    background-color: lightgray;
+    min-height: 400px;
+}
+
+section.helper-content .form-container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+section.helper-content .form-container>.title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+section.helper-content form {
+    padding: 40px;
+    background-color: #A7C7E7;
+    margin-block-end: 0;
+}
+
+section.helper-content .button-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #dfca90;
+}
+
+section.helper-content .button-container button {
+    margin: 0 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.suggestions-container {
+    margin-bottom: 20px;
+    padding: 10px 20px 40px 20px;
+    background-color: #b6e497;
+}
+
+.suggestions-container>.title {
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+
+#suggestions_slot {
+    font-size: 1.2em;
+    color: #888;
+}
+
 @media (max-width: 1535px) {
     .section {
         min-height: 650px;
