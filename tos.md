@@ -2,6 +2,7 @@
 title: Puzly.Co - Terms of Service
 layout: default
 body_class: page-legal
+show_language_options: true
 ---
 
 
@@ -76,6 +77,5 @@ body_class: page-legal
 
 <h2>9. Governing Law</h2>
 
-<p>Any claim related to Puzly.Co's Website shall be governed by the laws of tr without regards to its conflict of law provisions.</p>
+<p>Any claim related to Puzly.Co's Website shall be governed by the laws of Türkiye without regards to its conflict of law provisions.</p>
 
-</section>

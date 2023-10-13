@@ -1,6 +1,6 @@
 ---
 title: Puzly.Co
-layout: default_tr
+layout: default
 body_class: page-home
 show_language_options: false
 ---
@@ -351,16 +351,16 @@ show_language_options: false
 
 <section class="helper-content">
 	<div class="form-container">
-		<span class="title">BEŞ HARFLİ KELİME BULUCU</span>
+		<span class="title">FIVE-LETTER WORD FINDER</span>
 		<form id="word_form">
 			<guess-row-element></guess-row-element>
 		</form>
 		<div class="button-container">
-			<button type="button" onclick="addRow()">SIRA EKLE</button>
-			<button type="button" onclick="handleSuggestionRequest()">KELİME ÖNER</button>
+			<button type="button" onclick="addRow()">ADD ROW</button>
+			<button type="button" onclick="handleSuggestionRequest()">SUGGEST WORDS</button>
 		</div>
 		<div class="suggestions-container">
-			<span class="title">ÖNERİLEN KELİMELER</span>
+			<span class="title">SUGGESTED WORDS</span>
 			<br />
 			<span id="suggestions_slot"></span>
 		</div>

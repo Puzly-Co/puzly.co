@@ -1,6 +1,6 @@
 ---
 title: Puzly.Co
-layout: default
+layout: default_tr
 body_class: page-home
 show_language_options: true
 ---
@@ -10,11 +10,10 @@ show_language_options: true
 	<div class="container">
 		<div class="section-content">
 			<div class="section-title">
-				<span>Puzly.Co</span> is an innovative and player-driven game development studio
+				<span>Puzly.Co</span> yenilikçi ve oyuncu odaklı bir oyun geliştirme stüdyosudur.
 			</div>
 			<div class="section-text">
-				<span>Puzly.Co</span> is a game development studio that focuses on developing fun-packed games for mobile platforms. <span>Puzly.Co</span> partners with various established publishers to provide game enthusiasts with hit games
-				such as <span>BHKO</span>.
+				<span>Puzly.Co</span>, mobil platformlar için eğlence dolu oyunlar geliştirmeye odaklanan bir oyun geliştirme stüdyosudur. <span>Puzly.Co</span>, oyun meraklılarına <span>Beş Harfli Kelime Oyunu</span> gibi hit oyunları sunmak için çeşitli köklü yayıncılarla ortaklık yapıyor.
 			</div>
 		</div>
 	</div>
@@ -24,10 +23,10 @@ show_language_options: true
 	<div class="container">
 		<div class="section-content">
 			<div class="section-title">
-				<span>BHKO</span> is a word puzzle game in Turkish
+				<span>Beş Harfli Kelime Oyunu</span> Türkçe bir kelime bulmaca oyunudur.
 			</div>
 			<div class="section-text">
-				<span>BHKO</span> is a challenging but entertaining word puzzle game created for puzzle enthusiasts of all ages. If you feel that you are skilled enough in Turkish, then feel free to download and install <span>BHKO</span> at the link below.
+				<span>Beş Harfli Kelime Oyunu</span> her yaştan bulmaca meraklıları için oluşturulmuş zorlu ama eğlenceli bir kelime bulmaca oyunudur. Türkçe konusunda yeterince yetenekli olduğunuzu düşünüyorsanız aşağıdaki bağlantıdan <span>Beş Harfli Kelime Oyunu</span>'nu indirip yüklemekten çekinmeyin.
 			</div>
 			<div class="section-badge">
 				<a href="https://play.google.com/store/apps/details?id=co.puzly.bhko" target="_blank"><img alt="Get it on Google Play" id="logo-img" width="188" height="56" src="/images/google-play-badge-en.png" /></a>

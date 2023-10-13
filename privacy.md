@@ -2,6 +2,7 @@
 title: Puzly.Co - Privacy Policy
 layout: default
 body_class: page-legal
+show_language_options: true
 ---
 
 
@@ -60,7 +61,7 @@ body_class: page-legal
 <h2>Google DoubleClick DART Cookie</h2>
 
 <p>Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon
-    their visit to www.website.com and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting
+    their visit to www.puzly.co and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting
     the Google ad and content network Privacy Policy at the following URL –
     <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></p>
 
@@ -135,7 +136,6 @@ body_class: page-legal
     <li>GameAnalytics</li>
     <li>Facebook Analytics</li>
     <li>Adjust</li>
-    <li>Voodoo</li>
 </ul>
 
 <h3>Data deletion requests</h3>
@@ -171,4 +171,3 @@ body_class: page-legal
 
 <p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
 
-</section>
