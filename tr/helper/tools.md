@@ -12,7 +12,7 @@ show_language_options: true
 			<div class="section-title">
 				Bulmaca oyunlarımızı oynarken faydalı bulabileceğiniz bulmaca yardımcılarının listesi aşağıdadır:
 			</div>
-			<ul>
+			<ul class="main-list">
 				<li><a href="{{ layout.language }}/helper/bes-harfli-kelime-bulucu.html">Beş Harfli Kelime Bulucu</a></li>
 			</ul>
 		</div>

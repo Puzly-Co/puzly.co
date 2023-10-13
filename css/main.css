@@ -135,6 +135,48 @@ section.helper-content .button-container button {
     cursor: pointer;
 }
 
+.section.tools {
+    margin-top: 90px;
+}
+
+.section.tools .main-list {
+    margin-top: 0px;
+}
+
+.section.tools .main-list li {
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 40px;
+}
+
+.section.tools .main-list li::before {
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    top: 4px;
+    background: #9ddab5;
+    width: 20px; 
+    height: 20px;
+    text-align: center; 
+    transform: rotate(0deg);
+}
+
+.section.tools .main-list li::after {
+    content: ""; 
+    position: absolute; 
+    top: 4px; 
+    left: 0; 
+    height: 20px; 
+    width: 20px; 
+    background: #9ddab5;
+    transform: rotate(45deg);
+}
+
+.section.tools .main-list li a {
+    font-size: larger;
+    font-weight: bolder;
+}
+
 .suggestions-container {
     margin-bottom: 20px;
     padding: 10px 20px 40px 20px;
