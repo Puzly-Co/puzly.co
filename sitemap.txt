@@ -1,9 +1,17 @@
 https://www.puzly.co/index.html
+https://www.puzly.co/games/index.html
+https://www.puzly.co/games/five-letter-word-puzzle.html
+https://www.puzly.co/games/bes-harfli-kelime-oyunu.html
 https://www.puzly.co/helper/tools.html
+https://www.puzly.co/helper/bes-harfli-kelime-bulucu.html
 https://www.puzly.co/helper/five-letter-word-finder.html
 https://www.puzly.co/tr/index.html
+https://www.puzly.co/tr/games/index.html
+https://www.puzly.co/tr/games/five-letter-word-puzzle.html
+https://www.puzly.co/tr/games/bes-harfli-kelime-oyunu.html
 https://www.puzly.co/tr/helper/tools.html
 https://www.puzly.co/tr/helper/bes-harfli-kelime-bulucu.html
+https://www.puzly.co/tr/helper/five-letter-word-finder.html
 https://www.puzly.co/privacy.html
 https://www.puzly.co/tos.html
 https://www.puzly.co/tr/privacy.html

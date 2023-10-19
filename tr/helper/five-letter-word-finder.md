@@ -1,6 +1,6 @@
 ---
 title: Five-Letter Word Finder - Puzly.Co
-layout: default
+layout: default_tr
 body_class: page-home
 show_language_options: true
 ---
@@ -98,13 +98,13 @@ show_language_options: true
 			<div class="radio-container">
 				<input type="radio" name="state_1" value="correct" id="letter_1_correct">
 				<label for="letter_1_correct" class="tooltip"></label>
-				<span class="tooltip-text">correct place</span>
+				<span class="tooltip-text">doğru yerde</span>
 				<input type="radio" name="state_1" value="exists" id="letter_1_exists">
 				<label for="letter_1_exists" class="tooltip"></label>
-				<span class="tooltip-text">wrong place</span>
+				<span class="tooltip-text">var ama burada değil</span>
 				<input type="radio" name="state_1" value="absent" id="letter_1_absent">
 				<label for="letter_1_absent" class="tooltip"></label>
-				<span class="tooltip-text">absent</span>
+				<span class="tooltip-text">kelimede yok</span>
 			</div>
 		</div>
 		<div class="letter-input-container">
@@ -112,13 +112,13 @@ show_language_options: true
 			<div class="radio-container">
 				<input type="radio" name="state_2" value="correct" id="letter_2_correct">
 				<label for="letter_2_correct" class="tooltip"></label>
-				<span class="tooltip-text">correct place</span>
+				<span class="tooltip-text">doğru yerde</span>
 				<input type="radio" name="state_2" value="exists" id="letter_2_exists">
 				<label for="letter_2_exists" class="tooltip"></label>
-				<span class="tooltip-text">wrong place</span>
+				<span class="tooltip-text">var ama burada değil</span>
 				<input type="radio" name="state_2" value="absent" id="letter_2_absent">
 				<label for="letter_2_absent" class="tooltip"></label>
-				<span class="tooltip-text">absent</span>
+				<span class="tooltip-text">kelimede yok</span>
 			</div>
 		</div>
 		<div class="letter-input-container">
@@ -126,13 +126,13 @@ show_language_options: true
 			<div class="radio-container">
 				<input type="radio" name="state_3" value="correct" id="letter_3_correct">
 				<label for="letter_3_correct" class="tooltip"></label>
-				<span class="tooltip-text">correct place</span>
+				<span class="tooltip-text">doğru yerde</span>
 				<input type="radio" name="state_3" value="exists" id="letter_3_exists">
 				<label for="letter_3_exists" class="tooltip"></label>
-				<span class="tooltip-text">wrong place</span>
+				<span class="tooltip-text">var ama burada değil</span>
 				<input type="radio" name="state_3" value="absent" id="letter_3_absent">
 				<label for="letter_3_absent" class="tooltip"></label>
-				<span class="tooltip-text">absent</span>
+				<span class="tooltip-text">kelimede yok</span>
 			</div>
 		</div>
 		<div class="letter-input-container">
@@ -140,13 +140,13 @@ show_language_options: true
 			<div class="radio-container">
 				<input type="radio" name="state_4" value="correct" id="letter_4_correct">
 				<label for="letter_4_correct" class="tooltip"></label>
-				<span class="tooltip-text">correct place</span>
+				<span class="tooltip-text">doğru yerde</span>
 				<input type="radio" name="state_4" value="exists" id="letter_4_exists">
 				<label for="letter_4_exists" class="tooltip"></label>
-				<span class="tooltip-text">wrong place</span>
+				<span class="tooltip-text">var ama burada değil</span>
 				<input type="radio" name="state_4" value="absent" id="letter_4_absent">
 				<label for="letter_4_absent" class="tooltip"></label>
-				<span class="tooltip-text">absent</span>
+				<span class="tooltip-text">kelimede yok</span>
 			</div>
 		</div>
 		<div class="letter-input-container">
@@ -154,13 +154,13 @@ show_language_options: true
 			<div class="radio-container">
 				<input type="radio" name="state_5" value="correct" id="letter_5_correct">
 				<label for="letter_5_correct" class="tooltip"></label>
-				<span class="tooltip-text">correct place</span>
+				<span class="tooltip-text">doğru yerde</span>
 				<input type="radio" name="state_5" value="exists" id="letter_5_exists">
 				<label for="letter_5_exists" class="tooltip"></label>
-				<span class="tooltip-text">wrong place</span>
+				<span class="tooltip-text">var ama burada değil</span>
 				<input type="radio" name="state_5" value="absent" id="letter_5_absent">
 				<label for="letter_5_absent" class="tooltip"></label>
-				<span class="tooltip-text">absent</span>
+				<span class="tooltip-text">kelimede yok</span>
 			</div>
 		</div>
 	</div>
@@ -351,16 +351,16 @@ show_language_options: true
 
 <section class="helper-content">
 	<div class="form-container">
-		<span class="title">FIVE-LETTER ENGLISH WORD FINDER</span>
+		<span class="title">BEŞ HARFLİ İNGİLİZCE KELİME BULUCU</span>
 		<form id="word_form">
 			<guess-row-element></guess-row-element>
 		</form>
 		<div class="button-container">
-			<button type="button" onclick="addRow()">ADD ROW</button>
-			<button type="button" onclick="handleSuggestionRequest()">SUGGEST WORDS</button>
+			<button type="button" onclick="addRow()">SIRA EKLE</button>
+			<button type="button" onclick="handleSuggestionRequest()">KELİME ÖNER</button>
 		</div>
 		<div class="suggestions-container">
-			<span class="title">SUGGESTED WORDS</span>
+			<span class="title">ÖNERİLEN KELİMELER</span>
 			<br />
 			<span id="suggestions_slot"></span>
 		</div>

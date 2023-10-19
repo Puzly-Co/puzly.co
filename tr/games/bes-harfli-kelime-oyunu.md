@@ -1,23 +1,10 @@
 ---
-title: Puzly.Co
+title: Beş Harfli Kelime Oyunu - Puzly.Co
 layout: default_tr
 body_class: page-home
 show_language_options: true
 ---
 
-
-<section id="about" class="section about-section">
-	<div class="container">
-		<div class="section-content">
-			<div class="section-title">
-				<span>Puzly.Co</span> yenilikçi ve oyuncu odaklı bir oyun geliştirme stüdyosudur.
-			</div>
-			<div class="section-text">
-				<span>Puzly.Co</span>, mobil platformlar için eğlence dolu oyunlar geliştirmeye odaklanan bir oyun geliştirme stüdyosudur. <span>Puzly.Co</span>, oyun meraklılarına <span>Beş Harfli Kelime Oyunu</span> gibi hit oyunları sunmak için çeşitli köklü yayıncılarla ortaklık yapıyor.
-			</div>
-		</div>
-	</div>
-</section>
 
 <section id="games" class="section games-section game-1-section">
 	<div class="container">
@@ -31,9 +18,6 @@ show_language_options: true
 			<div class="section-badge">
 				<a href="https://play.google.com/store/apps/details?id=co.puzly.bhko" target="_blank"><img alt="Get it on Google Play" id="logo-img" width="188" height="56" src="/images/google-play-badge-en.png" /></a>
 				<img alt="Coming soon to App Store" id="logo-img" width="188" height="56" src="/images/app-store-coming-soon-badge-en.png" />
-			</div>
-			<div class="section-footer">
-				<a href="{{ layout.language }}/games/">Bütün Oyunlar</a>
 			</div>
 		</div>
 	</div>

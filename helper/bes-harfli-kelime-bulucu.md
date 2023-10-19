@@ -1,5 +1,5 @@
 ---
-title: Five-Letter Word Finder - Puzly.Co
+title: Beş Harfli Kelime Bulucu - Puzly.Co
 layout: default
 body_class: page-home
 show_language_options: true
@@ -351,7 +351,7 @@ show_language_options: true
 
 <section class="helper-content">
 	<div class="form-container">
-		<span class="title">FIVE-LETTER ENGLISH WORD FINDER</span>
+		<span class="title">FIVE-LETTER TURKISH WORD FINDER</span>
 		<form id="word_form">
 			<guess-row-element></guess-row-element>
 		</form>

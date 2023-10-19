@@ -1,8 +1,8 @@
 ---
-title: Puzly.Co
+title: Beş Harfli Kelime Bulucu - Puzly.Co
 layout: default_tr
 body_class: page-home
-show_language_options: false
+show_language_options: true
 ---
 
 <template id="guess-row-element-template">
@@ -351,7 +351,7 @@ show_language_options: false
 
 <section class="helper-content">
 	<div class="form-container">
-		<span class="title">BEŞ HARFLİ KELİME BULUCU</span>
+		<span class="title">BEŞ HARFLİ TÜRKÇE KELİME BULUCU</span>
 		<form id="word_form">
 			<guess-row-element></guess-row-element>
 		</form>
