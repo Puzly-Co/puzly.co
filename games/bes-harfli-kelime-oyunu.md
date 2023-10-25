@@ -17,7 +17,10 @@ show_language_options: true
 			</div>
 			<div class="section-badge">
 				<a href="https://play.google.com/store/apps/details?id=co.puzly.bhko" target="_blank"><img alt="Get it on Google Play" id="logo-img" width="188" height="56" src="/images/google-play-badge-en.png" /></a>
-				<img alt="Coming soon to App Store" id="logo-img" width="188" height="56" src="/images/app-store-coming-soon-badge-en.png" />
+				<div class="app-badge-container">
+					<img alt="Get it on App Store" id="logo-img" width="188" height="56" src="/images/app-store-badge-en.png" />
+					<span>Coming Soon!</span>
+				</div>
 			</div>
 		</div>
 	</div>

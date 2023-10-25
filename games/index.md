@@ -14,7 +14,7 @@ show_language_options: true
 			</div>
 			<ul class="main-list">
 				<li><a href="/games/five-letter-word-puzzle.html">Five-letter Word Puzzle</a> --- coming soon</li>
-				<li><a href="/tr/games/bes-harfli-kelime-oyunu.html">Beş Harfli Kelime Oyunu</a></li>
+				<li><a href="/games/bes-harfli-kelime-oyunu.html">Beş Harfli Kelime Oyunu</a></li>
 			</ul>
 		</div>
 	</div>
