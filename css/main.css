@@ -107,7 +107,7 @@ section.helper-content {
 }
 
 section.helper-content .form-container {
-    width: 400px;
+    width: 450px;
     margin: 0 auto;
 }
 
@@ -118,20 +118,34 @@ section.helper-content .form-container>.title {
 
 section.helper-content form {
     padding: 40px;
-    background-color: #A7C7E7;
     margin-block-end: 0;
+    justify-content: center;
+    background-color: #A7C7E7;
 }
 
 section.helper-content .button-container {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 15px;
     background-color: #dfca90;
 }
 
 section.helper-content .button-container button {
-    margin: 0 20px;
+    margin: 0 12px;
     padding: 10px 15px;
+    cursor: pointer;
+}
+
+section.helper-content .keyboard-container {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: #d6ceb8;
+}
+
+section.helper-content .keyboard-container button {
+    margin: 0 5px;
+    padding: 5px 8px;
     cursor: pointer;
 }
 

@@ -1,0 +1,261 @@
+<script>
+	class GuessRow extends HTMLElement {
+		constructor() {
+			super();
+			const template = document.getElementById(
+				"guess-row-element-template"
+			).content;
+			const shadowRoot = this.attachShadow({ mode: "open" });
+			shadowRoot.appendChild(template.cloneNode(true));
+		}
+  
+		connectedCallback() {
+			this.shadowRoot.addEventListener('keyup', this.handleKeyup.bind(this));
+			this.shadowRoot.querySelector('input.letter-input').focus();
+		}
+
+		disconnectedCallback() {
+			this.shadowRoot.removeEventListener('keyup', this.handleKeyup.bind(this));
+		}
+
+		getInputElements() {
+			return this.shadowRoot.querySelectorAll('input.letter-input');
+		}
+		
+		handleKeyup(e) {
+			let target = e.srcElement || e.target;
+			let maxLength = parseInt(target.attributes["maxlength"].value, 10);
+			let myLength = target.value.length;
+
+			let keyCode = e.keyCode || e.charCode;
+    		if (keyCode == 8 || keyCode == 46) {
+				// Move to previous field if empty (user pressed backspace or delete)
+				if (myLength === 0) {
+					let previous = target.parentNode;
+					while (previous.previousElementSibling) {
+						previous = previous.previousElementSibling;
+						if (previous.classList.contains("letter-input-container")) {
+							previous.firstElementChild.focus();
+							break;
+						}
+					}
+				}
+			}
+			else {
+				if (myLength >= maxLength) {
+					let next = target.parentNode;
+					while (next.nextElementSibling) {
+						next = next.nextElementSibling;
+						if (next.classList.contains("letter-input-container")) {
+							next.firstElementChild.focus();
+							break;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	customElements.define("guess-row-element", GuessRow);
+
+	document.addEventListener("DOMContentLoaded", handleContentLoaded);
+
+	function handleContentLoaded() {
+		addRow();
+		document.removeEventListener("DOMContentLoaded", handleContentLoaded);
+	}
+
+	let allRows = [];
+
+	function addRow() {
+		let newRow = new GuessRow();
+		allRows.push(newRow);
+		document.getElementById("word_form").appendChild(newRow);
+	}
+
+	function resetForm() {
+		const formNode = document.getElementById("word_form");
+		while (formNode.firstChild) {
+			formNode.removeChild(formNode.lastChild);
+		}
+		allRows = [];
+
+		document.getElementById("suggestions_slot").innerHTML = "";
+
+		addRow();
+	}
+
+	function enterLetter(a_letter) {
+		if (allRows.length > 0) {
+			let lastRow = allRows[allRows.length - 1];
+			let inputElements = lastRow.getInputElements();
+			Array.from(inputElements).every((inputEl) => {
+				let result = true;
+				if (inputEl.value.length === 0) {
+					inputEl.value = a_letter;
+					inputEl.focus();
+					result = false;
+				}
+				return result;
+			});
+		}
+	}
+
+	function handleSuggestionRequest() {
+		let rowMap = readFormData();
+		let result = analyzeData(rowMap);
+		
+		let suggestions = generateSuggestion(result.get("correctLetters"), result.get("existingLetters"), result.get("absentLetters"));
+		displaySuggestions(suggestions);
+	}
+
+	function readFormData() {
+		let rowMap = new Map();
+		let rowNum = 1;
+		Array.prototype.slice.call(document.getElementById("word_form").childNodes).forEach(function (el) {
+			if (!!el.shadowRoot) {
+				rowMap.set(rowNum, this.readRowData(el.shadowRoot.childNodes));
+				rowNum++;
+			}
+		}.bind(this));
+		return rowMap;
+	}
+
+	function analyzeData(rowMap) {
+		// analyze data
+		let result = new Map();
+		let correctLetters = new Map();
+		let existingLetters = new Map();
+		let absentLetters = new Map();
+		result.set("correctLetters", correctLetters);
+		result.set("existingLetters", existingLetters);
+		result.set("absentLetters", absentLetters);
+		for (let [rowNumber, fieldMap] of rowMap) {
+			// loop over each letter
+			for (let i = 1; i <= 5; i++) {
+				let letterValue = fieldMap.get(`letter_${i}`).toUpperCase();
+				if (letterValue.length == 1) {
+					let stateValue = fieldMap.get(`state_${i}`);
+					if (stateValue === "correct") {
+						correctLetters.set(i, letterValue);
+					}
+					else if (stateValue === "exists") {
+						if (!existingLetters.has(i)) {
+							existingLetters.set(i, new Array());
+						}
+						let arr = existingLetters.get(i);
+						if (!arr.includes(letterValue)) {
+							arr.push(letterValue);
+						}
+					}
+					else if (stateValue === "absent") {
+						if (!absentLetters.has(i)) {
+							absentLetters.set(i, new Array());
+						}
+						let arr = absentLetters.get(i);
+						if (!arr.includes(letterValue)) {
+							arr.push(letterValue);
+						}
+					}
+				}
+			}
+		}
+		return result;
+	}
+
+	function generateSuggestion(correctLetters, existingLetters, absentLetters) {
+		let suggestions = [...dictionaryData.keys()];
+		
+		// filter dictionary by correct letters
+		for (let [letterIndex, letterValue] of correctLetters) {
+			let i = suggestions.length;
+			while (i--) {
+				if (!(suggestions[i].charAt(letterIndex-1) === letterValue)) {
+					suggestions.splice(i, 1);
+				}
+			}
+		}
+
+		// filter dictionary by existing letters
+		for (let [letterIndex, letterArray] of existingLetters) {
+			let i = suggestions.length;
+			while (i--) {
+				if (letterArray.includes(suggestions[i].charAt(letterIndex-1)) || !letterArray.every(item => suggestions[i].includes(item))) {
+					suggestions.splice(i, 1);
+				}
+			}
+		}
+
+		// filter dictionary by absent letters
+		for (let [letterIndex, letterArray] of absentLetters) {
+			let i = suggestions.length;
+			while (i--) {
+				if (letterArray.includes(suggestions[i].charAt(letterIndex-1))) { 
+					suggestions.splice(i, 1);
+				}
+			}
+		}
+
+		// calculate max occurrences
+		let maxOccurrences = new Map();
+		let allCorrectLetters = Array.from(correctLetters.values()).flat();
+		let allExistingLetters = Array.from(existingLetters.values()).flat();
+
+		for (let [letterIndex, letterArray] of absentLetters) {
+			for (const letterValue of letterArray) {
+				if (!maxOccurrences.has(letterValue)) {
+					let max = 0;
+					if (allCorrectLetters.includes(letterValue)) {
+						max = allCorrectLetters.reduce(((letterCount, currentLetter) => { if (currentLetter === letterValue) letterCount++; return letterCount; }), 0);
+					}
+					if (allExistingLetters.includes(letterValue)) {
+						max += allExistingLetters.reduce(((letterCount, currentLetter) => { if (currentLetter === letterValue) letterCount++; return letterCount; }), 0);
+					}
+					if (max > 0) {
+						maxOccurrences.set(letterValue, max);
+					}
+				}
+			}
+		}
+
+		// filter by max occurrence
+		for (let [letterValue, maxCount] of maxOccurrences) {
+			let i = suggestions.length;
+			while (i--) {
+				if (suggestions[i].includes(letterValue) && (maxCount < suggestions[i].split(letterValue).length-1)) {
+					suggestions.splice(i, 1);
+				}
+			}
+		}
+		return suggestions;
+	}
+
+	function readRowData(elements) {
+		let result = new Map();
+		Array.prototype.slice.call(elements).forEach(function (el) {
+			if (!el.name || el.disabled || ['file', 'reset', 'submit', 'button'].indexOf(el.type) > -1) {
+				if (el.childElementCount > 0) {
+					result = new Map([...result, ...this.readRowData(el.childNodes)]);
+				}
+			}
+			else if (el.type === 'select-multiple') {
+				Array.prototype.slice.call(el.options).forEach(function (option) {
+					if (!option.selected) return;
+					result.set(el.name, option.value);
+				});
+			}
+			else if (['checkbox', 'radio'].indexOf(el.type) >-1 && !el.checked) {
+				return result;
+			}
+			else {
+				result.set(el.name, el.value);
+			}
+		}.bind(this));
+		return result;
+	}
+
+	function displaySuggestions(suggestions) {
+		let containerDiv = document.getElementById("suggestions_slot");
+		containerDiv.innerHTML = suggestions.join(", ");
+	}
+</script>

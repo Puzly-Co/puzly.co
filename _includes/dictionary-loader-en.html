@@ -1,0 +1,11 @@
+<script>
+	document.addEventListener("DOMContentLoaded", loadDictionaryData);
+
+	let dictionaryData;
+
+	async function loadDictionaryData() {
+		const response = await fetch('/data/bhko/dictionary.json');
+		const jsonData = await response.json();
+		dictionaryData = new Map(Object.entries(jsonData));
+	}
+</script>

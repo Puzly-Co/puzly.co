@@ -1,0 +1,163 @@
+<template id="guess-row-element-template">
+	<style>
+		div.row-container {
+			text-align: center;
+		}
+		input.letter-input {
+			height: 68px;
+			width: 68px;
+			border-style: solid;
+			border-width: 1px;
+			border-radius: 4px;
+			box-sizing: border-box;
+			text-align: center;
+			text-transform: capitalize;
+			font-size: 2em;
+			font-weight: bolder;
+		}
+		.letter-input-container {
+			display: inline-block;
+			width: 68px;
+			padding: 0;
+		}
+		.radio-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+		.letter-input-container label {
+			display: block;
+			margin: 0;
+			padding: 0;
+			height: 18px;
+			box-sizing: border-box;
+			background-color: white;
+			border-style: solid;
+			border-width: 2px;
+		}
+		.letter-input-container input[type="radio"] {
+			visibility: hidden;
+			display: none;
+		}
+		.letter-input-container input[value="correct"] + label {
+			border-color: greenyellow;
+		}
+		.letter-input-container input[value="exists"] + label {
+			border-color: yellow;
+		}
+		.letter-input-container input[value="absent"] + label {
+			border-color: gray;
+		}
+		.letter-input-container input[value="correct"]:checked + label {
+			background-color: greenyellow;
+		}
+		.letter-input-container input[value="exists"]:checked + label {
+			background-color: yellow;
+		}
+		.letter-input-container input[value="absent"]:checked + label {
+			background-color: gray;
+		}
+		.letter-input-container:has(> .radio-container > input[value="correct"]:checked) > input[type="text"] {
+			background-color: greenyellow;
+			border-color: greenyellow;
+		}
+		.letter-input-container:has(> .radio-container > input[value="exists"]:checked) > input[type="text"] {
+			background-color: yellow;
+			border-color: yellow;
+		}
+		.letter-input-container:has(> .radio-container > input[value="absent"]:checked) > input[type="text"] {
+			color: white;
+			background-color: gray;
+			border-color: gray;
+		}
+		/* Tooltip text */
+		.tooltip + .tooltip-text {
+			visibility: hidden;
+			margin-top: 19px;
+			margin-left: -10px;
+			padding: 2px 5px;
+			color: #fff;
+			text-align: center;
+			border-radius: 6px;
+			/* Position the tooltip text - see examples below! */
+			position: absolute;
+			z-index: 1;
+		}
+		/* Show the tooltip text when you mouse over the tooltip container */
+		.tooltip:hover + .tooltip-text {
+			visibility: visible;
+			background-color: #888;
+		}
+	</style>
+	<div class="row-container">
+		<div class="letter-input-container">
+			<input type="text" maxlength="1" placeholder=" " class="letter-input" name="letter_1"/>
+			<div class="radio-container">
+				<input type="radio" name="state_1" value="correct" id="letter_1_correct">
+				<label for="letter_1_correct" class="tooltip"></label>
+				<span class="tooltip-text">doğru yerde</span>
+				<input type="radio" name="state_1" value="exists" id="letter_1_exists">
+				<label for="letter_1_exists" class="tooltip"></label>
+				<span class="tooltip-text">var ama burada değil</span>
+				<input type="radio" name="state_1" value="absent" id="letter_1_absent">
+				<label for="letter_1_absent" class="tooltip"></label>
+				<span class="tooltip-text">kelimede yok</span>
+			</div>
+		</div>
+		<div class="letter-input-container">
+			<input type="text" maxlength="1" placeholder=" " class="letter-input" name="letter_2"/>
+			<div class="radio-container">
+				<input type="radio" name="state_2" value="correct" id="letter_2_correct">
+				<label for="letter_2_correct" class="tooltip"></label>
+				<span class="tooltip-text">doğru yerde</span>
+				<input type="radio" name="state_2" value="exists" id="letter_2_exists">
+				<label for="letter_2_exists" class="tooltip"></label>
+				<span class="tooltip-text">var ama burada değil</span>
+				<input type="radio" name="state_2" value="absent" id="letter_2_absent">
+				<label for="letter_2_absent" class="tooltip"></label>
+				<span class="tooltip-text">kelimede yok</span>
+			</div>
+		</div>
+		<div class="letter-input-container">
+			<input type="text" maxlength="1" placeholder=" " class="letter-input" name="letter_3"/>
+			<div class="radio-container">
+				<input type="radio" name="state_3" value="correct" id="letter_3_correct">
+				<label for="letter_3_correct" class="tooltip"></label>
+				<span class="tooltip-text">doğru yerde</span>
+				<input type="radio" name="state_3" value="exists" id="letter_3_exists">
+				<label for="letter_3_exists" class="tooltip"></label>
+				<span class="tooltip-text">var ama burada değil</span>
+				<input type="radio" name="state_3" value="absent" id="letter_3_absent">
+				<label for="letter_3_absent" class="tooltip"></label>
+				<span class="tooltip-text">kelimede yok</span>
+			</div>
+		</div>
+		<div class="letter-input-container">
+			<input type="text" maxlength="1" placeholder=" " class="letter-input" name="letter_4"/>
+			<div class="radio-container">
+				<input type="radio" name="state_4" value="correct" id="letter_4_correct">
+				<label for="letter_4_correct" class="tooltip"></label>
+				<span class="tooltip-text">doğru yerde</span>
+				<input type="radio" name="state_4" value="exists" id="letter_4_exists">
+				<label for="letter_4_exists" class="tooltip"></label>
+				<span class="tooltip-text">var ama burada değil</span>
+				<input type="radio" name="state_4" value="absent" id="letter_4_absent">
+				<label for="letter_4_absent" class="tooltip"></label>
+				<span class="tooltip-text">kelimede yok</span>
+			</div>
+		</div>
+		<div class="letter-input-container">
+			<input type="text" maxlength="1" placeholder=" " class="letter-input" name="letter_5"/>
+			<div class="radio-container">
+				<input type="radio" name="state_5" value="correct" id="letter_5_correct">
+				<label for="letter_5_correct" class="tooltip"></label>
+				<span class="tooltip-text">doğru yerde</span>
+				<input type="radio" name="state_5" value="exists" id="letter_5_exists">
+				<label for="letter_5_exists" class="tooltip"></label>
+				<span class="tooltip-text">var ama burada değil</span>
+				<input type="radio" name="state_5" value="absent" id="letter_5_absent">
+				<label for="letter_5_absent" class="tooltip"></label>
+				<span class="tooltip-text">kelimede yok</span>
+			</div>
+		</div>
+	</div>
+</template>
