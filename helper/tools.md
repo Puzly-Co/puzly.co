@@ -13,8 +13,8 @@ show_language_options: true
 				The following is a list of puzzle helpers that you may find useful when playing our puzzle games:
 			</div>
 			<ul class="main-list">
-				<li><a href="{{ layout.language }}/helper/five-letter-word-finder.html">Five-letter English Word Finder</a></li>
-				<li><a href="{{ layout.language }}/helper/bes-harfli-kelime-bulucu.html">Five-letter Turkish Word Finder</a></li>
+				<li><a href="/helper/five-letter-word-finder.html">Five-letter English Word Finder</a></li>
+				<li><a href="/helper/bes-harfli-kelime-bulucu.html">Five-letter Turkish Word Finder</a></li>
 			</ul>
 		</div>
 	</div>

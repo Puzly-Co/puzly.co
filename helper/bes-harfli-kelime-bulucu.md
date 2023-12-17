@@ -5,7 +5,7 @@ body_class: page-home
 show_language_options: true
 ---
 
-{% include dictionary-loader-en.html %}
+{% include dictionary-loader-tr.html %}
 {% include form-row-template-en.html %}
 {% include five-letter-helper.html %}
 
