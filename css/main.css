@@ -260,6 +260,34 @@ section.helper-content .keyboard-container button {
     border: 1px solid whitesmoke;
 }
 
+.usage-guide-container .status-box {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    height: 18px;
+    width: 21px;
+    box-sizing: border-box;
+}
+
+.usage-guide-container .correct-place-box {
+    background-color: greenyellow;
+}
+
+.usage-guide-container .wrong-place-box {
+    background-color: yellow;
+}
+
+.usage-guide-container .absent-box {
+    background-color: gray;
+}
+
+.usage-guide-container .usage-guide-text {
+    line-height: 1.5;
+    font-size: 0.7em;
+    vertical-align: middle;
+}
+
 @media (max-width: 1535px) {
     .section {
         min-height: 650px;

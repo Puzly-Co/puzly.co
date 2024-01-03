@@ -5,8 +5,8 @@ body_class: page-home
 show_language_options: true
 ---
 
-{% include dictionary-loader-en.html %}
-{% include form-row-template-tr.html %}
+{% include dictionary-loader.html dictionaryFilePath='/data/en/dictionary.json' %}
+{% include form-row-template.html correctPlaceText='doğru yerde' wrongPlaceText='var ama burada değil' absentText='kelimede yok' %}
 {% include five-letter-helper.html %}
 
 <section class="helper-content">
@@ -16,6 +16,20 @@ show_language_options: true
 			<button type="button" onclick="addRow()">SIRA EKLE</button>
 			<button type="button" onclick="handleSuggestionRequest()">KELİME ÖNER</button>
 			<button type="button" onclick="resetForm()">TEMİZLE</button>
+		</div>
+		<div class="usage-guide-container">
+			<div>
+				<div class="status-box correct-place-box"></div>
+				<span class="usage-guide-text">Harf kelimede mevcutsa ve doğru yerdeyse bu kutuyu seçin.</span>
+			</div>
+			<div>
+				<div class="status-box wrong-place-box"></div>
+				<span class="usage-guide-text">Harf sözcükte mevcutsa ancak yanlış yerdeyse bu kutuyu seçin.</span>
+			</div>
+			<div>
+				<div class="status-box absent-box"></div>
+				<span class="usage-guide-text">Kelime içerisinde ilgili harf bulunmadığında bu kutuyu seçin.</span>
+			</div>
 		</div>
 		<form id="word_form"></form>
 		<div class="suggestions-container">

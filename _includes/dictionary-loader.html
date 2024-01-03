@@ -4,7 +4,7 @@
 	let dictionaryData;
 
 	async function loadDictionaryData() {
-		const response = await fetch('/data/en/dictionary.json');
+		const response = await fetch("{{include.dictionaryFilePath}}");
 		const jsonData = await response.json();
 		dictionaryData = new Map(Object.entries(jsonData));
 	}
