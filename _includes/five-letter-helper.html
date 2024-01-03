@@ -56,22 +56,26 @@
 		}
 	}
 
+
 	customElements.define("guess-row-element", GuessRow);
 
 	document.addEventListener("DOMContentLoaded", handleContentLoaded);
+
+	let allRows = [];
+
 
 	function handleContentLoaded() {
 		addRow();
 		document.removeEventListener("DOMContentLoaded", handleContentLoaded);
 	}
 
-	let allRows = [];
 
 	function addRow() {
 		let newRow = new GuessRow();
 		allRows.push(newRow);
 		document.getElementById("word_form").appendChild(newRow);
 	}
+
 
 	function resetForm() {
 		const formNode = document.getElementById("word_form");
@@ -84,6 +88,7 @@
 
 		addRow();
 	}
+
 
 	function enterLetter(a_letter) {
 		if (allRows.length > 0) {
@@ -101,13 +106,11 @@
 		}
 	}
 
+
 	function handleSuggestionRequest() {
-		let rowMap = readFormData();
-		let result = analyzeData(rowMap);
-		
-		let suggestions = generateSuggestion(result.get("correctLetters"), result.get("existingLetters"), result.get("absentLetters"));
-		displaySuggestions(suggestions);
+		displaySuggestions(generateSuggestions(analyzeData(readFormData())));
 	}
+
 
 	function readFormData() {
 		let rowMap = new Map();
@@ -121,16 +124,26 @@
 		return rowMap;
 	}
 
+
 	function analyzeData(rowMap) {
-		// analyze data
+		// initialize result data structure
 		let result = new Map();
 		let correctLetters = new Map();
 		let existingLetters = new Map();
 		let absentLetters = new Map();
+		let minOccurrences = new Map();
+		let maxOccurrences = new Map();
 		result.set("correctLetters", correctLetters);
 		result.set("existingLetters", existingLetters);
 		result.set("absentLetters", absentLetters);
+		result.set("maxOccurrences", maxOccurrences);
+		result.set("minOccurrences", minOccurrences);
+
+		// loop over each row
 		for (let [rowNumber, fieldMap] of rowMap) {
+			let minOccurrencesForCurrentRow = new Map();
+			let maxOccurrencesForCurrentRow = new Map();
+
 			// loop over each letter
 			for (let i = 1; i <= 5; i++) {
 				let letterValue = fieldMap.get(`letter_${i}`).toUpperCase();
@@ -138,6 +151,7 @@
 					let stateValue = fieldMap.get(`state_${i}`);
 					if (stateValue === "correct") {
 						correctLetters.set(i, letterValue);
+						_incrementMapCountForLetter(minOccurrencesForCurrentRow, letterValue);
 					}
 					else if (stateValue === "exists") {
 						if (!existingLetters.has(i)) {
@@ -147,6 +161,7 @@
 						if (!arr.includes(letterValue)) {
 							arr.push(letterValue);
 						}
+						_incrementMapCountForLetter(minOccurrencesForCurrentRow, letterValue);
 					}
 					else if (stateValue === "absent") {
 						if (!absentLetters.has(i)) {
@@ -156,15 +171,62 @@
 						if (!arr.includes(letterValue)) {
 							arr.push(letterValue);
 						}
+						if (!minOccurrencesForCurrentRow.has(letterValue) && !maxOccurrencesForCurrentRow.has(letterValue)) {
+							maxOccurrencesForCurrentRow.set(letterValue, 0);
+						}
+						else if (minOccurrencesForCurrentRow.has(letterValue) && !maxOccurrencesForCurrentRow.has(letterValue)) {
+							maxOccurrencesForCurrentRow.set(letterValue, minOccurrencesForCurrentRow.get(letterValue));
+						}
+						else if (minOccurrencesForCurrentRow.has(letterValue) && maxOccurrencesForCurrentRow.has(letterValue)) {
+							if (minOccurrencesForCurrentRow.get(letterValue) > maxOccurrencesForCurrentRow.get(letterValue)) {
+								maxOccurrencesForCurrentRow.set(letterValue, minOccurrencesForCurrentRow.get(letterValue));
+							}
+						}
 					}
+				}
+			}
+			for (let [letterValue, minValue] of minOccurrencesForCurrentRow) {
+				if (minOccurrences.has(letterValue)) {
+					if (minValue > minOccurrences.get(letterValue)) {
+						minOccurrences.set(letterValue, minValue);
+					}
+				}
+				else {
+					minOccurrences.set(letterValue, minValue);
+				}
+			}
+
+			for (let [letterValue, maxValue] of maxOccurrencesForCurrentRow) {
+				if (maxOccurrences.has(letterValue)) {
+					if (maxValue > maxOccurrences.get(letterValue)) {
+						maxOccurrences.set(letterValue, maxValue);
+					}
+				}
+				else {
+					maxOccurrences.set(letterValue, maxValue);
 				}
 			}
 		}
 		return result;
 	}
 
-	function generateSuggestion(correctLetters, existingLetters, absentLetters) {
-		let suggestions = [...dictionaryData.keys()];
+
+	function _incrementMapCountForLetter(a_map, a_letter) {
+		if (!a_map.has(a_letter)) {
+			a_map.set(a_letter, 0);
+		}
+		a_map.set(a_letter, a_map.get(a_letter) + 1);
+	}
+
+
+	function generateSuggestions(a_analysis_data) {
+		let correctLetters = a_analysis_data.get("correctLetters");
+		let existingLetters = a_analysis_data.get("existingLetters");
+		let absentLetters = a_analysis_data.get("absentLetters");
+		let minOccurrences = a_analysis_data.get("minOccurrences");
+		let maxOccurrences = a_analysis_data.get("maxOccurrences");
+
+		let suggestions = [...dictionaryData.keys()];	// start with the entire dictionary
 		
 		// filter dictionary by correct letters
 		for (let [letterIndex, letterValue] of correctLetters) {
@@ -196,24 +258,12 @@
 			}
 		}
 
-		// calculate max occurrences
-		let maxOccurrences = new Map();
-		let allCorrectLetters = Array.from(correctLetters.values()).flat();
-		let allExistingLetters = Array.from(existingLetters.values()).flat();
-
-		for (let [letterIndex, letterArray] of absentLetters) {
-			for (const letterValue of letterArray) {
-				if (!maxOccurrences.has(letterValue)) {
-					let max = 0;
-					if (allCorrectLetters.includes(letterValue)) {
-						max = allCorrectLetters.reduce(((letterCount, currentLetter) => { if (currentLetter === letterValue) letterCount++; return letterCount; }), 0);
-					}
-					if (allExistingLetters.includes(letterValue)) {
-						max += allExistingLetters.reduce(((letterCount, currentLetter) => { if (currentLetter === letterValue) letterCount++; return letterCount; }), 0);
-					}
-					if (max > 0) {
-						maxOccurrences.set(letterValue, max);
-					}
+		// filter by min occurrence
+		for (let [letterValue, minCount] of minOccurrences) {
+			let i = suggestions.length;
+			while (i--) {
+				if (!suggestions[i].includes(letterValue) || (suggestions[i].split(letterValue).length-1) < minCount) {
+					suggestions.splice(i, 1);
 				}
 			}
 		}
@@ -229,6 +279,7 @@
 		}
 		return suggestions;
 	}
+
 
 	function readRowData(elements) {
 		let result = new Map();
@@ -253,6 +304,7 @@
 		}.bind(this));
 		return result;
 	}
+
 
 	function displaySuggestions(suggestions) {
 		let containerDiv = document.getElementById("suggestions_slot");
