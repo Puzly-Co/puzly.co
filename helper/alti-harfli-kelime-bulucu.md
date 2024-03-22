@@ -1,34 +1,34 @@
 ---
-title: Beş Harfli Kelime Bulucu - Puzly.Co
-layout: default_tr
+title: Altı Harfli Kelime Bulucu - Puzly.Co
+layout: default
 body_class: page-home
 show_language_options: true
 ---
 
-{% include dictionary-loader.html dictionaryFilePath='/data/tr/tr_5_dictionary.json' %}
-{% include form-row-template.html numLetters=5 correctPlaceText='doğru yerde' wrongPlaceText='var ama burada değil' absentText='kelimede yok' %}
-{% include helper-script.html numLetters=5 %}
+{% include dictionary-loader.html dictionaryFilePath='/data/tr/tr_6_dictionary.json' %}
+{% include form-row-template.html numLetters=6 correctPlaceText='correct place' wrongPlaceText='wrong place' absentText='absent' %}
+{% include helper-script.html numLetters=6 %}
 
 <section class="helper-content">
 	<div class="form-container">
-		<span class="title">BEŞ HARFLİ TÜRKÇE KELİME BULUCU</span>
+		<span class="title">SIX-LETTER TURKISH WORD FINDER</span>
 		<div class="button-container">
-			<button type="button" onclick="addRow()">SIRA EKLE</button>
-			<button type="button" onclick="handleSuggestionRequest()">KELİME ÖNER</button>
-			<button type="button" onclick="resetForm()">TEMİZLE</button>
+			<button type="button" onclick="addRow()">ADD ROW</button>
+			<button type="button" onclick="handleSuggestionRequest()">SUGGEST WORDS</button>
+			<button type="button" onclick="resetForm()">CLEAR</button>
 		</div>
 		<div class="usage-guide-container">
 			<div>
 				<div class="status-box correct-place-box"></div>
-				<span class="usage-guide-text">Harf kelimede mevcutsa ve doğru yerdeyse bu kutuyu seçin.</span>
+				<span class="usage-guide-text">Select this box when the letter exists in the word and is in the correct place.</span>
 			</div>
 			<div>
 				<div class="status-box wrong-place-box"></div>
-				<span class="usage-guide-text">Harf sözcükte mevcutsa ancak yanlış yerdeyse bu kutuyu seçin.</span>
+				<span class="usage-guide-text">Select this box when the letter exists in the word, but is in the wrong place.</span>
 			</div>
 			<div>
 				<div class="status-box absent-box"></div>
-				<span class="usage-guide-text">Kelime içerisinde ilgili harf bulunmadığında bu kutuyu seçin.</span>
+				<span class="usage-guide-text">Select this box when the letter does not exist in the word.</span>
 			</div>
 		</div>
 		<form id="word_form"></form>
@@ -41,7 +41,7 @@ show_language_options: true
 			<button type="button" onclick="enterLetter('Ü')">Ü</button>
 		</div>
 		<div class="suggestions-container">
-			<span class="title">ÖNERİLEN KELİMELER</span>
+			<span class="title">SUGGESTED WORDS</span>
 			<br />
 			<span id="suggestions_slot"></span>
 		</div>

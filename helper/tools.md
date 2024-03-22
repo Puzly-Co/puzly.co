@@ -15,6 +15,7 @@ show_language_options: true
 			<ul class="main-list">
 				<li><a href="/helper/five-letter-word-finder.html">Five-letter English Word Finder</a></li>
 				<li><a href="/helper/bes-harfli-kelime-bulucu.html">Five-letter Turkish Word Finder</a></li>
+				<li><a href="/helper/alti-harfli-kelime-bulucu.html">Six-letter Turkish Word Finder</a></li>
 			</ul>
 		</div>
 	</div>

@@ -14,6 +14,7 @@ show_language_options: true
 			</div>
 			<ul class="main-list">
 				<li><a href="/tr/helper/bes-harfli-kelime-bulucu.html">Beş Harfli Türkçe Kelime Bulucu</a></li>
+				<li><a href="/tr/helper/alti-harfli-kelime-bulucu.html">Altı Harfli Türkçe Kelime Bulucu</a></li>
 				<li><a href="/tr/helper/five-letter-word-finder.html">Beş Harfli İngilizce Kelime Bulucu</a></li>
 			</ul>
 		</div>

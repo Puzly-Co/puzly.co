@@ -89,75 +89,21 @@
 		}
 	</style>
 	<div class="row-container">
+		{% for rowIndex in (1..include.numLetters) %}
 		<div class="letter-input-container">
-			<input type="text" maxlength="1" placeholder=" " class="letter-input" name="letter_1"/>
+			<input type="text" maxlength="1" placeholder=" " class="letter-input" name="letter_{{forloop.index}}"/>
 			<div class="radio-container">
-				<input type="radio" name="state_1" value="correct" id="letter_1_correct">
-				<label for="letter_1_correct" class="tooltip"></label>
+				<input type="radio" name="state_{{forloop.index}}" value="correct" id="letter_{{forloop.index}}_correct">
+				<label for="letter_{{forloop.index}}_correct" class="tooltip"></label>
 				<span class="tooltip-text">{{include.correctPlaceText}}</span>
-				<input type="radio" name="state_1" value="exists" id="letter_1_exists">
-				<label for="letter_1_exists" class="tooltip"></label>
+				<input type="radio" name="state_{{forloop.index}}" value="exists" id="letter_{{forloop.index}}_exists">
+				<label for="letter_{{forloop.index}}_exists" class="tooltip"></label>
 				<span class="tooltip-text">{{include.wrongPlaceText}}</span>
-				<input type="radio" name="state_1" value="absent" id="letter_1_absent" checked>
-				<label for="letter_1_absent" class="tooltip"></label>
+				<input type="radio" name="state_{{forloop.index}}" value="absent" id="letter_{{forloop.index}}_absent" checked>
+				<label for="letter_{{forloop.index}}_absent" class="tooltip"></label>
 				<span class="tooltip-text">{{include.absentText}}</span>
 			</div>
 		</div>
-		<div class="letter-input-container">
-			<input type="text" maxlength="1" placeholder=" " class="letter-input" name="letter_2"/>
-			<div class="radio-container">
-				<input type="radio" name="state_2" value="correct" id="letter_2_correct">
-				<label for="letter_2_correct" class="tooltip"></label>
-				<span class="tooltip-text">{{include.correctPlaceText}}</span>
-				<input type="radio" name="state_2" value="exists" id="letter_2_exists">
-				<label for="letter_2_exists" class="tooltip"></label>
-				<span class="tooltip-text">{{include.wrongPlaceText}}</span>
-				<input type="radio" name="state_2" value="absent" id="letter_2_absent" checked>
-				<label for="letter_2_absent" class="tooltip"></label>
-				<span class="tooltip-text">{{include.absentText}}</span>
-			</div>
-		</div>
-		<div class="letter-input-container">
-			<input type="text" maxlength="1" placeholder=" " class="letter-input" name="letter_3"/>
-			<div class="radio-container">
-				<input type="radio" name="state_3" value="correct" id="letter_3_correct">
-				<label for="letter_3_correct" class="tooltip"></label>
-				<span class="tooltip-text">{{include.correctPlaceText}}</span>
-				<input type="radio" name="state_3" value="exists" id="letter_3_exists">
-				<label for="letter_3_exists" class="tooltip"></label>
-				<span class="tooltip-text">{{include.wrongPlaceText}}</span>
-				<input type="radio" name="state_3" value="absent" id="letter_3_absent" checked>
-				<label for="letter_3_absent" class="tooltip"></label>
-				<span class="tooltip-text">{{include.absentText}}</span>
-			</div>
-		</div>
-		<div class="letter-input-container">
-			<input type="text" maxlength="1" placeholder=" " class="letter-input" name="letter_4"/>
-			<div class="radio-container">
-				<input type="radio" name="state_4" value="correct" id="letter_4_correct">
-				<label for="letter_4_correct" class="tooltip"></label>
-				<span class="tooltip-text">{{include.correctPlaceText}}</span>
-				<input type="radio" name="state_4" value="exists" id="letter_4_exists">
-				<label for="letter_4_exists" class="tooltip"></label>
-				<span class="tooltip-text">{{include.wrongPlaceText}}</span>
-				<input type="radio" name="state_4" value="absent" id="letter_4_absent" checked>
-				<label for="letter_4_absent" class="tooltip"></label>
-				<span class="tooltip-text">{{include.absentText}}</span>
-			</div>
-		</div>
-		<div class="letter-input-container">
-			<input type="text" maxlength="1" placeholder=" " class="letter-input" name="letter_5"/>
-			<div class="radio-container">
-				<input type="radio" name="state_5" value="correct" id="letter_5_correct">
-				<label for="letter_5_correct" class="tooltip"></label>
-				<span class="tooltip-text">{{include.correctPlaceText}}</span>
-				<input type="radio" name="state_5" value="exists" id="letter_5_exists">
-				<label for="letter_5_exists" class="tooltip"></label>
-				<span class="tooltip-text">{{include.wrongPlaceText}}</span>
-				<input type="radio" name="state_5" value="absent" id="letter_5_absent" checked>
-				<label for="letter_5_absent" class="tooltip"></label>
-				<span class="tooltip-text">{{include.absentText}}</span>
-			</div>
-		</div>
+		{% endfor %}
 	</div>
 </template>

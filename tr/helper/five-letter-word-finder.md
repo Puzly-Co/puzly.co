@@ -5,9 +5,9 @@ body_class: page-home
 show_language_options: true
 ---
 
-{% include dictionary-loader.html dictionaryFilePath='/data/en/dictionary.json' %}
-{% include form-row-template.html correctPlaceText='doğru yerde' wrongPlaceText='var ama burada değil' absentText='kelimede yok' %}
-{% include five-letter-helper.html %}
+{% include dictionary-loader.html dictionaryFilePath='/data/en/en_5_dictionary.json' %}
+{% include form-row-template.html numLetters=5 correctPlaceText='doğru yerde' wrongPlaceText='var ama burada değil' absentText='kelimede yok' %}
+{% include helper-script.html numLetters=5 %}
 
 <section class="helper-content">
 	<div class="form-container">

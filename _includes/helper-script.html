@@ -145,7 +145,7 @@
 			let maxOccurrencesForCurrentRow = new Map();
 
 			// loop over each letter
-			for (let i = 1; i <= 5; i++) {
+			for (let i = 1; i <= {{include.numLetters}}; i++) {
 				let letterValue = fieldMap.get(`letter_${i}`).toUpperCase();
 				if (letterValue.length == 1) {
 					let stateValue = fieldMap.get(`state_${i}`);

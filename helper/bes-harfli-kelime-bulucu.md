@@ -5,9 +5,9 @@ body_class: page-home
 show_language_options: true
 ---
 
-{% include dictionary-loader.html dictionaryFilePath='/data/tr/dictionary.json' %}
-{% include form-row-template.html correctPlaceText='correct place' wrongPlaceText='wrong place' absentText='absent' %}
-{% include five-letter-helper.html %}
+{% include dictionary-loader.html dictionaryFilePath='/data/tr/tr_5_dictionary.json' %}
+{% include form-row-template.html numLetters=5 correctPlaceText='correct place' wrongPlaceText='wrong place' absentText='absent' %}
+{% include helper-script.html numLetters=5 %}
 
 <section class="helper-content">
 	<div class="form-container">
