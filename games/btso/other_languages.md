@@ -2,6 +2,7 @@
 title: Puzly.Co
 layout: default_tr
 body_class: page-home
+show_language_options: false
 ---
 
 
@@ -9,10 +10,10 @@ body_class: page-home
 	<div class="container">
 		<div class="section-games-list">
 			<div class="section-title">
-				Beş Harfli Kelime Oyunu'nu aşağıdaki dillerde de oynayabilirsiniz:
+				Беш Тамгалуу Сөз Оюнун төмөнкү тилдерде ойной аласыз:
 			</div>
 			<ul class="main-list">
-				<li><a href="/tr/games/bes-tamgaluu-soz-oyunu.html">Беш Тамгалуу Сөз Оюну</a></li>
+				<li><a href="/tr/games/bes-harfli-kelime-oyunu.html">Beş Harfli Kelime Oyunu</a></li>
 				<li><a href="/tr/games/five-letter-word-puzzle.html">Five-letter Word Puzzle</a> --- yakında</li>
 			</ul>
 		</div>

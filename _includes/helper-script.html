@@ -11,7 +11,13 @@
   
 		connectedCallback() {
 			this.shadowRoot.addEventListener('keyup', this.handleKeyup.bind(this));
-			this.shadowRoot.querySelector('input.letter-input').focus();
+			Array.from(this.shadowRoot.querySelectorAll('input.letter-input')).forEach((inputEl) => {
+				inputEl.addEventListener("focus", (event) => {
+					this.fireInputFocusedEvent(inputEl);
+				});
+			});
+			let firstInput = this.shadowRoot.querySelector('input.letter-input');
+			firstInput.focus();
 		}
 
 		disconnectedCallback() {
@@ -20,6 +26,27 @@
 
 		getInputElements() {
 			return this.shadowRoot.querySelectorAll('input.letter-input');
+		}
+
+		fireInputFocusedEvent(inputEl) {
+			const customEvent = new CustomEvent("inputFocus", { detail: inputEl });
+			this.dispatchEvent(customEvent);
+		}
+		
+		skipToNextInput(target) {
+			let maxLength = parseInt(target.attributes["maxlength"].value, 10);
+			let myLength = target.value.length;
+
+			if (myLength >= maxLength) {
+				let next = target.parentNode;
+				while (next.nextElementSibling) {
+					next = next.nextElementSibling;
+					if (next.classList.contains("letter-input-container")) {
+						next.firstElementChild.focus();
+						break;
+					}
+				}
+			}
 		}
 		
 		handleKeyup(e) {
@@ -42,16 +69,7 @@
 				}
 			}
 			else {
-				if (myLength >= maxLength) {
-					let next = target.parentNode;
-					while (next.nextElementSibling) {
-						next = next.nextElementSibling;
-						if (next.classList.contains("letter-input-container")) {
-							next.firstElementChild.focus();
-							break;
-						}
-					}
-				}
+				this.skipToNextInput(target);
 			}
 		}
 	}
@@ -62,6 +80,8 @@
 	document.addEventListener("DOMContentLoaded", handleContentLoaded);
 
 	let allRows = [];
+	let focusedInput;
+	let focusedRow;
 
 
 	function handleContentLoaded() {
@@ -72,6 +92,10 @@
 
 	function addRow() {
 		let newRow = new GuessRow();
+		newRow.addEventListener("inputFocus", (event) => {
+			focusedInput = event.detail;
+			focusedRow = event.target;
+		});
 		allRows.push(newRow);
 		document.getElementById("word_form").appendChild(newRow);
 	}
@@ -91,17 +115,24 @@
 
 
 	function enterLetter(a_letter) {
-		if (allRows.length > 0) {
-			let lastRow = allRows[allRows.length - 1];
-			let inputElements = lastRow.getInputElements();
-			Array.from(inputElements).every((inputEl) => {
-				let result = true;
-				if (inputEl.value.length === 0) {
-					inputEl.value = a_letter;
-					inputEl.focus();
-					result = false;
+		if (focusedInput) {
+			focusedInput.value = a_letter;
+			focusedRow.skipToNextInput(focusedInput);
+		}
+		else if (allRows.length > 0) {
+			let focusFound = false;
+			allRows.forEach((row) => {
+				if (!focusFound) {
+					Array.from(row.getInputElements()).every((inputEl) => {
+						let result = true;
+						if (inputEl === document.activeElement) {
+							inputEl.value = a_letter;
+							result = false;
+							focusFound = true;
+						}
+						return result;
+					});	
 				}
-				return result;
 			});
 		}
 	}
@@ -202,7 +233,7 @@
 						maxOccurrences.set(letterValue, maxValue);
 					}
 				}
-				else {
+				else if (maxValue > 0) {
 					maxOccurrences.set(letterValue, maxValue);
 				}
 			}
@@ -252,7 +283,7 @@
 		for (let [letterIndex, letterArray] of absentLetters) {
 			let i = suggestions.length;
 			while (i--) {
-				if (letterArray.includes(suggestions[i].charAt(letterIndex-1))) { 
+				if (letterArray.includes(suggestions[i].charAt(letterIndex-1))) {
 					suggestions.splice(i, 1);
 				}
 			}

@@ -1,17 +1,17 @@
 ---
-title: Altı Harfli Kelime Bulucu - Puzly.Co
+title: Beş Harfli Kelime Bulucu - Puzly.Co
 layout: default_tr
 body_class: page-home
 show_language_options: true
 ---
 
-{% include dictionary-loader.html dictionaryFilePath='/data/tr/tr_6_dictionary.json' %}
-{% include form-row-template.html numLetters=6 correctPlaceText='doğru yerde' wrongPlaceText='var ama burada değil' absentText='kelimede yok' %}
-{% include helper-script.html numLetters=6 %}
+{% include dictionary-loader.html dictionaryFilePath='/data/tr/tr_4_dictionary.json' %}
+{% include form-row-template.html numLetters=4 correctPlaceText='doğru yerde' wrongPlaceText='var ama burada değil' absentText='kelimede yok' %}
+{% include helper-script.html numLetters=4 %}
 
 <section class="helper-content">
 	<div class="form-container">
-		<span class="title">ALTI HARFLİ TÜRKÇE KELİME BULUCU</span>
+		<span class="title">BEŞ HARFLİ TÜRKÇE KELİME BULUCU</span>
 		<div class="button-container">
 			<button type="button" onclick="addRow()">SIRA EKLE</button>
 			<button type="button" onclick="handleSuggestionRequest()">KELİME ÖNER</button>

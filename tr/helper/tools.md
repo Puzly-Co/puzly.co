@@ -13,8 +13,13 @@ show_language_options: true
 				Bulmaca oyunlarımızı oynarken faydalı bulabileceğiniz bulmaca yardımcılarının listesi aşağıdadır:
 			</div>
 			<ul class="main-list">
+				<li><a href="/tr/helper/dort-harfli-kelime-bulucu.html">Dört Harfli Türkçe Kelime Bulucu</a></li>
 				<li><a href="/tr/helper/bes-harfli-kelime-bulucu.html">Beş Harfli Türkçe Kelime Bulucu</a></li>
 				<li><a href="/tr/helper/alti-harfli-kelime-bulucu.html">Altı Harfli Türkçe Kelime Bulucu</a></li>
+				<!--<li><a href="/tr/helper/tort-tamgaluu-soz-tapkic.html">Төрт Тамгалуу Сөз Тапкыч</a></li>-->
+				<li><a href="/tr/helper/tort-tamgaluu-soz-tapkic.html">Dört Harfli Kırgızca Kelime Bulucu</a></li>
+				<li><a href="/tr/helper/bes-tamgaluu-soz-tapkic.html">Beş Harfli Kırgızca Kelime Bulucu</a></li>
+				<li><a href="/tr/helper/alti-tamgaluu-soz-tapkic.html">Altı Harfli Kırgızca Kelime Bulucu</a></li>
 				<li><a href="/tr/helper/five-letter-word-finder.html">Beş Harfli İngilizce Kelime Bulucu</a></li>
 			</ul>
 		</div>

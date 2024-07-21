@@ -2,6 +2,7 @@
 title: Puzly.Co
 layout: default_tr
 body_class: page-home
+show_language_options: false
 ---
 
 
@@ -9,11 +10,11 @@ body_class: page-home
 	<div class="container">
 		<div class="section-games-list">
 			<div class="section-title">
-				Puzly.co'nun sunduğu aşağıdaki Türkçe harf oyunlarını da oynayabilirsiniz:
+				Төрт Тамгалуу Сөз Оюнун төмөнкү тилдерде ойной аласыз:
 			</div>
 			<ul class="main-list">
-				<li><a href="/tr/games/dort-harfli-kelime-oyunu.html">Dört Harfli Kelime Oyunu</a></li>
 				<li><a href="/tr/games/alti-harfli-kelime-oyunu.html">Altı Harfli Kelime Oyunu</a></li>
+				<li><a href="#">Four-letter Word Puzzle</a> --- yakında</li>
 			</ul>
 		</div>
 	</div>

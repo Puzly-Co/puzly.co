@@ -2,6 +2,7 @@
 title: Puzly.Co
 layout: default_tr
 body_class: page-home
+show_language_options: false
 ---
 
 
@@ -13,7 +14,7 @@ body_class: page-home
 			</div>
 			<ul class="main-list">
 				<li><a href="/tr/games/dort-harfli-kelime-oyunu.html">Dört Harfli Kelime Oyunu</a></li>
-				<li><a href="/tr/games/alti-harfli-kelime-oyunu.html">Altı Harfli Kelime Oyunu</a></li>
+				<li><a href="/tr/games/bes-harfli-kelime-oyunu.html">Beş Harfli Kelime Oyunu</a></li>
 			</ul>
 		</div>
 	</div>
