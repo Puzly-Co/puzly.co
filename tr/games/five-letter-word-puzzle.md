@@ -17,11 +17,11 @@ show_language_options: true
 			</div>
 			<div class="section-badge">
 				<div class="app-badge-container">
-					<img alt="Get it on Google Play" id="logo-img" width="188" height="56" src="/images/google-play-badge-tr.png" />
+					<img alt="Google Play'den indirin" id="gp-logo-img" width="188" height="56" src="/images/google-play-badge-tr.png" />
 					<span>Yakında!</span>
 				</div>
 				<div class="app-badge-container">
-					<img alt="Get it on App Store" id="logo-img" width="188" height="56" src="/images/app-store-badge-tr.png" />
+					<img alt="App Store'dan indirin" id="as-logo-img" width="188" height="56" src="/images/app-store-badge-tr.png" />
 					<span>Yakında!</span>
 				</div>
 			</div>

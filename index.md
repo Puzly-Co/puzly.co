@@ -30,11 +30,8 @@ show_language_options: true
 				<span>Beş Harfli Kelime Oyunu</span> is a challenging but entertaining word puzzle game created for puzzle enthusiasts of all ages. If you feel that you are skilled enough in Turkish, then feel free to download and install <span>Beş Harfli Kelime Oyunu</span> at the link below.
 			</div>
 			<div class="section-badge">
-				<a href="https://play.google.com/store/apps/details?id=co.puzly.bhko" target="_blank"><img alt="Get it on Google Play" id="logo-img" width="188" height="56" src="/images/google-play-badge-en.png" /></a>
-				<div class="app-badge-container">
-					<img alt="Get it on App Store" id="logo-img" width="188" height="56" src="/images/app-store-badge-en.png" />
-					<span>Coming Soon!</span>
-				</div>
+				<a href="https://play.google.com/store/apps/details?id=co.puzly.bhko" target="_blank"><img alt="Get it on Google Play" id="gp-logo-img" width="188" height="56" src="/images/google-play-badge-en.png" /></a>
+				<a href="https://apps.apple.com/app/be%C5%9F-harfli-kelime-oyunu/id6596769905" target="_blank"><img alt="Get it on App Store" id="as-logo-img" width="188" height="56" src="/images/app-store-badge-en.png" /></a>
 			</div>
 			<div class="section-footer">
 				<a href="/games/">All Games</a>
