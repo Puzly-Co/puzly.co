@@ -23,16 +23,18 @@ show_language_options: true
 	<div class="container">
 		<div class="section-content">
 			<div class="section-title">
-				<span>Beş Harfli Kelime Oyunu</span> Türkçe bir kelime bulmaca oyunudur.
+				Yeni <span>Beş Harfli Kelime Oyunu</span>, dokuz oyunu tek bir çatı altında toplayan bir kelime bulmaca oyunudur.
 			</div>
 			<div class="section-text">
-				<span>Beş Harfli Kelime Oyunu</span> her yaştan bulmaca meraklıları için oluşturulmuş zorlu ama eğlenceli bir kelime bulmaca oyunudur. Türkçe konusunda yeterince yetenekli olduğunuzu düşünüyorsanız aşağıdaki bağlantıdan <span>Beş Harfli Kelime Oyunu</span>'nu indirip yüklemekten çekinmeyin.
+				Geliştirilmiş <span>Beş Harfli Kelime Oyunu</span>, her yaştan bulmaca tutkunu için yaratılmış, zorlu ama eğlenceli bir kelime bulmaca oyunudur. Daha önce ayrı ayrı sunulan dokuz oyunu bir araya getiren oyunumuzda İngilizce, Türkçe ve Kırgızca dillerinde dört ila altı kelimelik bulmacaları çözmenin yanı sıra, artık üç farklı zorluk seviyesinden birini seçebilirsiniz. Eğlenceli bir Türkçe, Kırgızca veya İngilizce kelime bulmacasının çözmenin keyfini yaşamaya hazır olduğunuzu düşünüyorsanız, aşağıdaki bağlantıdan <span>Beş Harfli Kelime Oyunu</span>'nu ücretsiz olarak indirin ve kurun.
 			</div>
 			<div class="section-badge">
 				<a href="https://play.google.com/store/apps/details?id=co.puzly.bhko" target="_blank"><img alt="Google Play'den indirin" id="gp-logo-img" width="188" height="56" src="/images/google-play-badge-tr.png" /></a>
 				<a href="https://apps.apple.com/app/be%C5%9F-harfli-kelime-oyunu/id6596769905" target="_blank"><img alt="App Store'dan indirin" id="as-logo-img" width="188" height="56" src="/images/app-store-badge-tr.png" /></a>
 			</div>
 			<div class="section-footer">
+				<a href="{% link tr/games/new-bes-harfli-kelime-oyunu.md %}">Oyun Detayları</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<a href="{{ layout.language }}/games/">Bütün Oyunlar</a>
 			</div>
 		</div>
