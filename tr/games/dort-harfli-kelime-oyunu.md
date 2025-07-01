@@ -17,10 +17,7 @@ show_language_options: true
 			</div>
 			<div class="section-badge">
 				<a href="https://play.google.com/store/apps/details?id=co.puzly.dhko" target="_blank"><img alt="Google Play'den indirin" id="gp-logo-img" width="188" height="56" src="/images/google-play-badge-tr.png" /></a>
-				<div class="app-badge-container">
-					<img alt="App Store'dan indirin" id="as-logo-img" width="188" height="56" src="/images/app-store-badge-tr.png" />
-					<span>Yakında!</span>
-				</div>
+				<a href="https://apps.apple.com/app/be%C5%9F-harfli-kelime-oyunu/id6596769905" target="_blank"><img alt="App Store'dan indirin" id="as-logo-img" width="188" height="56" src="/images/app-store-badge-tr.png" /></a>
 			</div>
 		</div>
 	</div>

@@ -17,10 +17,7 @@ show_language_options: true
 			</div>
 			<div class="section-badge">
 				<a href="https://play.google.com/store/apps/details?id=co.puzly.ahko" target="_blank"><img alt="Get it on Google Play" id="gp-logo-img" width="188" height="56" src="/images/google-play-badge-en.png" /></a>
-				<div class="app-badge-container">
-					<img alt="Get it on App Store" id="as-logo-img" width="188" height="56" src="/images/app-store-badge-en.png" />
-					<span>Coming Soon!</span>
-				</div>
+				<a href="https://apps.apple.com/app/be%C5%9F-harfli-kelime-oyunu/id6596769905" target="_blank"><img alt="Get it on App Store" id="as-logo-img" width="188" height="56" src="/images/app-store-badge-en.png" /></a>
 			</div>
 		</div>
 	</div>

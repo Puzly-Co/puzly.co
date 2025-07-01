@@ -16,14 +16,8 @@ show_language_options: true
 				<span>Five-Letter Word Puzzle</span> her yaştan bulmaca meraklıları için oluşturulmuş zorlu ama eğlenceli bir kelime bulmaca oyunudur. İngilizce konusunda yeterince yetenekli olduğunuzu düşünüyorsanız aşağıdaki bağlantıdan <span>Five-Letter Word Puzzle</span>'yı indirip yüklemekten çekinmeyin.
 			</div>
 			<div class="section-badge">
-				<div class="app-badge-container">
-					<img alt="Google Play'den indirin" id="gp-logo-img" width="188" height="56" src="/images/google-play-badge-tr.png" />
-					<span>Yakında!</span>
-				</div>
-				<div class="app-badge-container">
-					<img alt="App Store'dan indirin" id="as-logo-img" width="188" height="56" src="/images/app-store-badge-tr.png" />
-					<span>Yakında!</span>
-				</div>
+				<a href="https://play.google.com/store/apps/details?id=co.puzly.flwp" target="_blank"><img alt="Google Play'den indirin" id="gp-logo-img" width="188" height="56" src="/images/google-play-badge-tr.png" /></a>
+				<a href="https://apps.apple.com/app/be%C5%9F-harfli-kelime-oyunu/id6596769905" target="_blank"><img alt="App Store'dan indirin" id="as-logo-img" width="188" height="56" src="/images/app-store-badge-tr.png" /></a>
 			</div>
 		</div>
 	</div>
