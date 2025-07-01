@@ -1,5 +1,5 @@
 ---
-title: Puzly.Co
+title: Yardımcılar - Puzly.Co
 layout: default_tr
 body_class: page-home
 show_language_options: true
@@ -16,11 +16,12 @@ show_language_options: true
 				<li><a href="/tr/helper/dort-harfli-kelime-bulucu.html">Dört Harfli Türkçe Kelime Bulucu</a></li>
 				<li><a href="/tr/helper/bes-harfli-kelime-bulucu.html">Beş Harfli Türkçe Kelime Bulucu</a></li>
 				<li><a href="/tr/helper/alti-harfli-kelime-bulucu.html">Altı Harfli Türkçe Kelime Bulucu</a></li>
-				<!--<li><a href="/tr/helper/tort-tamgaluu-soz-tapkic.html">Төрт Тамгалуу Сөз Тапкыч</a></li>-->
 				<li><a href="/tr/helper/tort-tamgaluu-soz-tapkic.html">Dört Harfli Kırgızca Kelime Bulucu</a></li>
 				<li><a href="/tr/helper/bes-tamgaluu-soz-tapkic.html">Beş Harfli Kırgızca Kelime Bulucu</a></li>
 				<li><a href="/tr/helper/alti-tamgaluu-soz-tapkic.html">Altı Harfli Kırgızca Kelime Bulucu</a></li>
+				<li><a href="/tr/helper/four-letter-word-finder.html">Dört Harfli İngilizce Kelime Bulucu</a></li>
 				<li><a href="/tr/helper/five-letter-word-finder.html">Beş Harfli İngilizce Kelime Bulucu</a></li>
+				<li><a href="/tr/helper/six-letter-word-finder.html">Altı Harfli İngilizce Kelime Bulucu</a></li>
 			</ul>
 		</div>
 	</div>

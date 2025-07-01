@@ -1,5 +1,5 @@
 ---
-title: Puzly.Co
+title: Helpers - Puzly.Co
 layout: default
 body_class: page-home
 show_language_options: true
@@ -13,7 +13,9 @@ show_language_options: true
 				The following is a list of puzzle helpers that you may find useful when playing our puzzle games:
 			</div>
 			<ul class="main-list">
+				<li><a href="/helper/four-letter-word-finder.html">Four-letter English Word Finder</a></li>
 				<li><a href="/helper/five-letter-word-finder.html">Five-letter English Word Finder</a></li>
+				<li><a href="/helper/six-letter-word-finder.html">Six-letter English Word Finder</a></li>
 				<li><a href="/helper/dort-harfli-kelime-bulucu.html">Four-letter Turkish Word Finder</a></li>
 				<li><a href="/helper/bes-harfli-kelime-bulucu.html">Five-letter Turkish Word Finder</a></li>
 				<li><a href="/helper/alti-harfli-kelime-bulucu.html">Six-letter Turkish Word Finder</a></li>
