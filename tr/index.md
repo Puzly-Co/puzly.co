@@ -26,7 +26,7 @@ show_language_options: true
 				Yeni <span>Beş Harfli Kelime Oyunu</span>, dokuz oyunu tek bir çatı altında toplayan bir kelime bulmaca oyunudur.
 			</div>
 			<div class="section-text">
-				Geliştirilmiş <span>Beş Harfli Kelime Oyunu</span>, her yaştan bulmaca tutkunu için yaratılmış, zorlu ama eğlenceli bir kelime bulmaca oyunudur. Daha önce ayrı ayrı sunulan dokuz oyunu bir araya getiren oyunumuzda İngilizce, Türkçe ve Kırgızca dillerinde dört ila altı kelimelik bulmacaları çözmenin yanı sıra, artık üç farklı zorluk seviyesinden birini seçebilirsiniz. Eğlenceli bir Türkçe, Kırgızca veya İngilizce kelime bulmacasının çözmenin keyfini yaşamaya hazır olduğunuzu düşünüyorsanız, aşağıdaki bağlantıdan <span>Beş Harfli Kelime Oyunu</span>'nu ücretsiz olarak indirin ve kurun.
+				Geliştirilmiş <span>Beş Harfli Kelime Oyunu</span>, her yaştan bulmaca tutkunu için yaratılmış, zorlu ama eğlenceli bir kelime bulmaca oyunudur. Daha önce ayrı ayrı sunulan dokuz oyunu bir araya getiren oyunumuzda İngilizce, Türkçe ve Kırgızca dillerinde dört ila altı kelimelik bulmacaları çözmenin yanı sıra, artık üç farklı zorluk seviyesinden birini seçebilirsiniz. Eğlenceli bir Türkçe, Kırgızca veya İngilizce kelime bulmacasının çözmenin keyfini yaşamaya hazır olduğunuzu düşünüyorsanız, aşağıdaki bağlantıdan <span>Beş Harfli Kelime Oyunu</span>'nu ücretsiz olarak indirebilirsiniz.
 			</div>
 			<div class="section-badge">
 				<a href="https://play.google.com/store/apps/details?id=co.puzly.bhko" target="_blank"><img alt="Google Play'den indirin" id="gp-logo-img" width="188" height="56" src="/images/google-play-badge-tr.png" /></a>
