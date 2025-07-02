@@ -1,5 +1,5 @@
 ---
-title: Beş Harfli Kelime Bulucu - Puzly.Co
+title: Five-Letter Turkish Word Finder - Puzly.Co
 layout: default
 body_class: page-home
 show_language_options: true

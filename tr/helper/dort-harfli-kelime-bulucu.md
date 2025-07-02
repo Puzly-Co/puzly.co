@@ -1,5 +1,5 @@
 ---
-title: Beş Harfli Kelime Bulucu - Puzly.Co
+title: Dört Harfli Kelime Bulucu - Puzly.Co
 layout: default_tr
 body_class: page-home
 show_language_options: true
@@ -11,7 +11,7 @@ show_language_options: true
 
 <section class="helper-content">
 	<div class="form-container">
-		<span class="title">BEŞ HARFLİ TÜRKÇE KELİME BULUCU</span>
+		<span class="title">DÖRT HARFLİ TÜRKÇE KELİME BULUCU</span>
 		<div class="button-container">
 			<button type="button" onclick="addRow()">SIRA EKLE</button>
 			<button type="button" onclick="handleSuggestionRequest()">KELİME ÖNER</button>

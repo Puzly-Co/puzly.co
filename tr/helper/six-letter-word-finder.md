@@ -1,5 +1,5 @@
 ---
-title: Six-Letter Word Finder - Puzly.Co
+title: Altı Harfli İngilizce Kelime Bulucu - Puzly.Co
 layout: default_tr
 body_class: page-home
 show_language_options: true
