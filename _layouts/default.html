@@ -5,72 +5,73 @@ language: ""
 <html>
 
 <head>
-    <title>{{ page.title }}</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta http-equiv="content-language" content="en-US">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/css/menu.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<title>{{ page.title }}</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="content-language" content="en-US">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="/css/menu.css">
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
 <body class="{{ page.body_class }}">
-    <header class="header">
-        <div class="header-contents">
-            <a href="{{ layout.language }}/" class="logo"><img src="/images/logo-header.png" alt="Puzly.Co"></a>
-            <input class="menu-button" type="checkbox" id="menu-button" />
-            <label class="menu-icon" for="menu-button"><span class="nav-icon"></span></label>
-            <ul class="menu">
-                <li><a href="{{ layout.language }}/#about" onclick="document.getElementById('menu-button').checked=false;">ABOUT</a></li>
-                <li><a href="{{ layout.language }}/#games" onclick="document.getElementById('menu-button').checked=false;">GAMES</a></li>
-                <li><a href="{{ layout.language }}/helper/tools.html" onclick="document.getElementById('menu-button').checked=false;">TOOLS</a></li>
-            </ul>
-        </div>
-    </header>
+	<header class="header">
+		<div class="header-contents">
+			<a href="{{ layout.language }}/" class="logo"><img src="/images/logo-header.png" alt="Puzly.Co"></a>
+			<input class="menu-button" type="checkbox" id="menu-button" />
+			<label class="menu-icon" for="menu-button"><span class="nav-icon"></span></label>
+			<ul class="menu">
+				<li><a href="{{ layout.language }}/#about" onclick="document.getElementById('menu-button').checked=false;">ABOUT</a></li>
+				<li><a href="{{ layout.language }}/#games" onclick="document.getElementById('menu-button').checked=false;">GAMES</a></li>
+				<li><a href="{{ layout.language }}/helper/tools.html" onclick="document.getElementById('menu-button').checked=false;">TOOLS</a></li>
+			</ul>
+		</div>
+	</header>
 
-    {{ content | remove: '<p>' | remove: '</p>' }}
+	{{ content | remove: '<p>' | remove: '</p>' }}
 
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Puzly.Co</h4>
-                    <ul>
-                        <li><a href="/#about">About</a></li>
-                        <li><a href="/#games">Games</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="/privacy.html">Privacy Policy</a></li>
-                        <li><a href="/tos.html">Terms of Service</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Social Media</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/PuzlyCo" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/PuzlyCo" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <!-- <a href="https://www.instagram.com/PuzlyCo" target="_blank"><i class="fab fa-instagram"></i></a> -->
-                        <a href="https://www.youtube.com/@PuzlyCo" target="_blank"><i class="fab fa-youtube"></i></a>
-                        <!-- <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a> -->
-                    </div>
-                </div>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col">
+					<h4>Puzly.Co</h4>
+					<ul>
+						<li><a href="/#about">About</a></li>
+						<li><a href="/#games">Games</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Legal</h4>
+					<ul>
+						<li><a href="/privacy.html">Privacy Policy</a></li>
+						<li><a href="/tos.html">Terms of Service</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Social Media</h4>
+					<div class="social-links">
+						<a href="https://www.facebook.com/PuzlyCo" target="_blank"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://twitter.com/PuzlyCo" target="_blank"><i class="fab fa-twitter"></i></a>
+						<!-- <a href="https://www.instagram.com/PuzlyCo" target="_blank"><i class="fab fa-instagram"></i></a> -->
+						<a href="https://www.youtube.com/@PuzlyCo" target="_blank"><i class="fab fa-youtube"></i></a>
+						<!-- <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a> -->
+					</div>
+				</div>
 {% if page.show_language_options == true %}
-                <div class="footer-col">
-                    <h4>Language</h4>
-                    <ul class="language-options">
-                        <li><a href="/tr{{ page.url }}"><img class="lang-icon" src="/images/turkish-flag.png" />Türkçe</a></li>
-                    </ul>
-                </div>
+				<div class="footer-col">
+					<h4>Language</h4>
+					<ul class="language-options">
+						<li><a href="/tr{{ page.url }}"><img class="lang-icon" src="/images/turkish-flag.png" />Türkçe</a></li>
+						<li><a href="/kg{{ page.url }}"><img class="lang-icon" src="/images/kyrgyz-flag.png" />Кыргызча</a></li>
+					</ul>
+				</div>
 {% endif %}
-            </div>
-        </div>
-    </footer>
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>

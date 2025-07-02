@@ -1,5 +1,5 @@
 ---
-title: Puzly.Co - Terms of Service
+title: Kullanım Şartları ve Koşulları - Puzly.Co
 layout: default_tr
 body_class: page-legal
 show_language_options: true

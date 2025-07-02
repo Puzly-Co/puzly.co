@@ -1,5 +1,5 @@
 ---
-title: Puzly.Co - Privacy Policy
+title: Gizlilik Politikası - Puzly.Co
 layout: default_tr
 body_class: page-legal
 show_language_options: true

@@ -1,5 +1,5 @@
 ---
-language: /tr
+language: /kg
 ---
 
 <html>
@@ -8,7 +8,7 @@ language: /tr
 	<title>{{ page.title }}</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<meta http-equiv="content-language" content="tr-TR">
+	<meta http-equiv="content-language" content="kg-KG">
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="/css/menu.css">
@@ -24,9 +24,9 @@ language: /tr
 			<input class="menu-button" type="checkbox" id="menu-button" />
 			<label class="menu-icon" for="menu-button"><span class="nav-icon"></span></label>
 			<ul class="menu">
-				<li><a href="{{ layout.language }}/#about" onclick="document.getElementById('menu-button').checked=false;">HAKKINDA</a></li>
-				<li><a href="{{ layout.language }}/#games" onclick="document.getElementById('menu-button').checked=false;">OYUNLAR</a></li>
-				<li><a href="{{ layout.language }}/helper/tools.html" onclick="document.getElementById('menu-button').checked=false;">ARAÇLAR</a></li>
+				<li><a href="{{ layout.language }}/#about" onclick="document.getElementById('menu-button').checked=false;">ЖӨНҮНДӨ</a></li>
+				<li><a href="{{ layout.language }}/#games" onclick="document.getElementById('menu-button').checked=false;">ОЮНЛАР</a></li>
+				<li><a href="{{ layout.language }}/helper/tools.html" onclick="document.getElementById('menu-button').checked=false;">ШАЙМАНДАР</a></li>
 			</ul>
 		</div>
 	</header>
@@ -39,19 +39,19 @@ language: /tr
 				<div class="footer-col">
 					<h4>Puzly.Co</h4>
 					<ul>
-						<li><a href="{{ layout.language }}/#about">Hakkında</a></li>
-						<li><a href="{{ layout.language }}/#games">Oyunlar</a></li>
+						<li><a href="https://puzly.co/{{ layout.language }}/#about" target="_blank">Жөнүндө</a></li>
+						<li><a href="https://puzly.co/{{ layout.language }}/#games" target="_blank">Оюндар</a></li>
 					</ul>
 				</div>
 				<div class="footer-col">
-					<h4>Yasal</h4>
+					<h4>Юридикалык</h4>
 					<ul>
-						<li><a href="{{ layout.language }}/privacy.html">Gizlilik Politikası</a></li>
-						<li><a href="{{ layout.language }}/tos.html">Kullanım Koşulları</a></li>
+						<li><a href="/tr/privacy.html">Купуялык Саясаты</a></li>
+						<li><a href="https://puzly.co/{{ layout.language }}/tos.html" target="_blank">Колдонуу Шарттары</a></li>
 					</ul>
 				</div>
 				<div class="footer-col">
-					<h4>Sosyal Medya</h4>
+					<h4>Коомдук Медиа</h4>
 					<div class="social-links">
 						<a href="https://www.facebook.com/PuzlyCo" target="_blank"><i class="fab fa-facebook-f"></i></a>
 						<a href="https://twitter.com/PuzlyCo" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -62,9 +62,9 @@ language: /tr
 				</div>
 {% if page.show_language_options == true %}
 				<div class="footer-col">
-					<h4>Dil</h4>
+					<h4>Тил</h4>
 					<ul class="language-options">
-						<li><a href="{{ page.url | replace_first: layout.language,"/kg" }}"><img class="lang-icon" src="/images/kyrgyz-flag.png" />Кыргызча</a></li>
+						<li><a href="{{ page.url | replace_first: layout.language,"/tr" }}""><img class="lang-icon" src="/images/turkish-flag.png" />Türkçe</a></li>
 						<li><a href="{{ page.url | replace_first: layout.language,"" }}"><img class="lang-icon" src="/images/british-flag.png" />English</a></li>
 					</ul>
 				</div>

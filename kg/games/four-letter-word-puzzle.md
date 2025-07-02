@@ -1,0 +1,24 @@
+---
+title: Four-Letter Word Puzzle - Puzly.Co
+layout: default_kg
+body_class: page-home
+show_language_options: true
+---
+
+
+<section id="games" class="section games-section game-1-section">
+	<div class="container">
+		<div class="section-content">
+			<div class="section-title">
+				<span>Four-Letter Word Puzzle</span>- англисче сөз баш катырма оюну.
+			</div>
+			<div class="section-text">
+				<span>Four-Letter Word Puzzle</span> бардык курактагы баш катырма сүйүүчүлөр үчүн татаал, бирок кызыктуу сөз баш катырма оюну. Эгер сиз өзүңүздү англис тилинде жетиштүү таланттуу деп ойлосоңуз, төмөнкү шилтемеден <span>Four-Letter Word Puzzle</span> жүктөп алып, орнотуп алыңыз.
+			</div>
+			<div class="section-badge">
+				<a href="https://play.google.com/store/apps/details?id=co.puzly.folwp" target="_blank"><img alt="Google Playден жүктөп алыңыз" id="gp-logo-img" width="188" height="56" src="/images/google-play-badge-kg.png" /></a>
+				<a href="https://apps.apple.com/app/be%C5%9F-harfli-kelime-oyunu/id6596769905" target="_blank"><img alt="App Storeдон жүктөп алыңыз" id="as-logo-img" width="188" height="56" src="/images/app-store-badge-kg.png" /></a>
+			</div>
+		</div>
+	</div>
+</section>

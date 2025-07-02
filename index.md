@@ -10,11 +10,10 @@ show_language_options: true
 	<div class="container">
 		<div class="section-content">
 			<div class="section-title">
-				<span>Puzly.Co</span> is an innovative and player-driven game development studio
+				<span>Puzly.Co</span> is an innovative and player-driven game development studio.
 			</div>
 			<div class="section-text">
-				<span>Puzly.Co</span> is a game development studio that focuses on developing fun-packed games for mobile platforms. <span>Puzly.Co</span> partners with various established publishers to provide game enthusiasts with hit games
-				such as <span>BHKO</span>.
+				<span>Puzly.Co</span> is a game development studio that focuses on developing fun-packed games for mobile platforms. <span>Puzly.Co</span> partners with various established publishers to provide game enthusiasts with hit games such as <span>Beş Harfli Kelime Oyunu</span>.
 			</div>
 		</div>
 	</div>
