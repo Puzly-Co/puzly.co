@@ -1,380 +1,384 @@
 * {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-    line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
 }
 
 body.page-home {
-    background-color: #effffe;
+	background-color: #effffe;
 }
 
 body.page-legal {
-    background-color: #ffffff !important;
+	background-color: #ffffff !important;
 }
 
 .container {
-    max-width: 1200px;
-    padding: 0 30px;
-    margin: 0 auto;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+	max-width: 1200px;
+	padding: 0 30px;
+	margin: 0 auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .section {
-    min-height: 735px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    position: relative;
+	min-height: 735px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
 }
 
 .about-section {
-    padding: 110px 0;
-    background: url("../images/about-section-bg.png") no-repeat center;
-    background-size: cover;
+	padding: 110px 0;
+	background: url("../images/about-section-bg.png") no-repeat center;
+	background-size: cover;
 }
 
 .games-section {
-    padding: 110px 0;
-    background-size: cover;
+	padding: 110px 0;
+	background-size: cover;
 }
 
 .game-1-section {
-    background: url("../images/game-1-section-bg.png") no-repeat center;
+	background: url("../images/game-1-section-bg.png") no-repeat center;
 }
 
 .section-legal {
-    padding: 110px 0 70px 0;
-    margin: 0 5em;
+	padding: 110px 0 70px 0;
+	margin: 0 5em;
 }
 
 .section-single {
-    padding: 110px 0 70px 0;
-    margin: 0 5em;
+	padding: 110px 0 70px 0;
+	margin: 0 5em;
 }
 
 .section-content {
-    width: 650px;
+	width: 650px;
 }
 
 .section-title {
-    color: #099188;
-    font-weight: 700;
-    font-size: 54px;
-    line-height: 65px;
-    margin-bottom: 50px;
+	color: #099188;
+	font-weight: 700;
+	font-size: 54px;
+	line-height: 65px;
+	margin-bottom: 50px;
 }
 
 .games-section .section-title {
-    color: #d1a105;
-    margin-top: 50px;
+	color: #d1a105;
+	margin-top: 50px;
 }
 
 .about-section .section-text {
-    color: #242021;
+	color: #242021;
 }
 
 .games-section .section-text {
-    color: #444;
+	color: #444;
 }
 
 .games-section .section-badge {
-    text-align: center;
+	text-align: center;
 }
 
 .games-section .section-badge img {
-    margin-top: 30;
-    margin-right: 40;
+	margin-top: 30;
+	margin-right: 40;
 }
 
 .section-title span {
-    color: #292526;
+	color: #292526;
 }
 
 .section-text span {
-    font-weight: bolder;
+	font-weight: bolder;
+}
+
+.development-story .section-text:not(:last-child) {
+	margin-bottom: 20px;
 }
 
 section.helper-content {
-    margin-top: 100px;
-    background-color: lightgray;
-    min-height: 400px;
+	margin-top: 100px;
+	background-color: lightgray;
+	min-height: 400px;
 }
 
 section.helper-content .form-container {
-    width: 510px;
-    margin: 0 auto;
+	width: 510px;
+	margin: 0 auto;
 }
 
 section.helper-content .form-container>.title {
-    font-size: 1.5em;
-    font-weight: bold;
+	font-size: 1.5em;
+	font-weight: bold;
 }
 
 section.helper-content form {
-    padding: 40px;
-    margin-block-end: 0;
-    justify-content: center;
-    background-color: #A7C7E7;
+	padding: 40px;
+	margin-block-end: 0;
+	justify-content: center;
+	background-color: #A7C7E7;
 }
 
 section.helper-content .button-container {
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    background-color: #dfca90;
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+	background-color: #dfca90;
 }
 
 section.helper-content .button-container button {
-    margin: 0 12px;
-    padding: 10px 15px;
-    cursor: pointer;
+	margin: 0 12px;
+	padding: 10px 15px;
+	cursor: pointer;
 }
 
 section.helper-content .keyboard-container {
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    background-color: #d6ceb8;
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+	background-color: #d6ceb8;
 }
 
 section.helper-content .keyboard-container button {
-    margin: 0 5px;
-    padding: 5px 8px;
-    cursor: pointer;
+	margin: 0 5px;
+	padding: 5px 8px;
+	cursor: pointer;
 }
 
 .section-footer {
-    margin-top: 60px;
-    text-align: center;
+	margin-top: 60px;
+	text-align: center;
 }
 
 .section-footer a {
-    font-size: larger;
-    font-weight: bolder;
-    color: #d1a105;
+	font-size: larger;
+	font-weight: bolder;
+	color: #d1a105;
 }
 
 .section.games {
-    margin-top: 120px;
+	margin-top: 120px;
 }
 
 .section.games .section-games-list li {
-    margin-top: 10px;
+	margin-top: 10px;
 }
 
 .section.games .section-games-list a {
-    font-size: larger;
-    font-weight: bolder;
-    color: #d1a105;
+	font-size: larger;
+	font-weight: bolder;
+	color: #d1a105;
 }
 
 .section.tools {
-    margin-top: 90px;
+	margin-top: 90px;
 }
 
 .section.tools .main-list {
-    margin-top: 0px;
+	margin-top: 0px;
 }
 
 .section.tools .main-list li {
-    list-style: none;
-    position: relative;
-    margin-top: 18px;
-    padding: 0 0 0 40px;
+	list-style: none;
+	position: relative;
+	margin-top: 18px;
+	padding: 0 0 0 40px;
 }
 
 .section.tools .main-list li a {
-    font-size: larger;
-    font-weight: bolder;
-    color: #d1a105;
+	font-size: larger;
+	font-weight: bolder;
+	color: #d1a105;
 }
 
 .section.tools .main-list li::before {
-    content: ""; 
-    position: absolute; 
-    left: 0; 
-    top: 4px;
-    background: #9ddab5;
-    width: 20px; 
-    height: 20px;
-    text-align: center; 
-    transform: rotate(0deg);
+	content: ""; 
+	position: absolute; 
+	left: 0; 
+	top: 4px;
+	background: #9ddab5;
+	width: 20px; 
+	height: 20px;
+	text-align: center; 
+	transform: rotate(0deg);
 }
 
 .section.tools .main-list li::after {
-    content: ""; 
-    position: absolute; 
-    top: 4px; 
-    left: 0; 
-    height: 20px; 
-    width: 20px; 
-    background: #9ddab5;
-    transform: rotate(45deg);
+	content: ""; 
+	position: absolute; 
+	top: 4px; 
+	left: 0; 
+	height: 20px; 
+	width: 20px; 
+	background: #9ddab5;
+	transform: rotate(45deg);
 }
 
 .section.tools .main-list li a {
-    font-size: larger;
-    font-weight: bolder;
+	font-size: larger;
+	font-weight: bolder;
 }
 
 .suggestions-container {
-    margin-bottom: 20px;
-    padding: 10px 20px 40px 20px;
-    background-color: #b6e497;
+	margin-bottom: 20px;
+	padding: 10px 20px 40px 20px;
+	background-color: #b6e497;
 }
 
 .suggestions-container>.title {
-    font-size: 1.3em;
-    text-decoration: underline;
+	font-size: 1.3em;
+	text-decoration: underline;
 }
 
 #suggestions_slot {
-    font-size: 1.2em;
-    color: #888;
+	font-size: 1.2em;
+	color: #888;
 }
 
 .app-badge-container {
-    position: relative;
-    display: inline-block;
+	position: relative;
+	display: inline-block;
 }
 
 .app-badge-container span {
-    position: absolute;
-    right: 25px;
-    top: 43px;
-    transform: rotate(45deg);
-    background-color: orange;
-    padding: 0 10px;
-    color: whitesmoke;
-    border: 2px solid whitesmoke;
-    font-size: small;
+	position: absolute;
+	right: 25px;
+	top: 43px;
+	transform: rotate(45deg);
+	background-color: orange;
+	padding: 0 10px;
+	color: whitesmoke;
+	border: 2px solid whitesmoke;
+	font-size: small;
 }
 
 .app-badge-container img {
-    border: 1px solid whitesmoke;
+	border: 1px solid whitesmoke;
 }
 
 .usage-guide-container .status-box {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0;
-    padding: 0;
-    height: 18px;
-    width: 21px;
-    box-sizing: border-box;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+	height: 18px;
+	width: 21px;
+	box-sizing: border-box;
 }
 
 .usage-guide-container .correct-place-box {
-    background-color: greenyellow;
+	background-color: greenyellow;
 }
 
 .usage-guide-container .wrong-place-box {
-    background-color: yellow;
+	background-color: yellow;
 }
 
 .usage-guide-container .absent-box {
-    background-color: gray;
+	background-color: gray;
 }
 
 .usage-guide-container .usage-guide-text {
-    line-height: 1.5;
-    font-size: 0.7em;
-    vertical-align: middle;
+	line-height: 1.5;
+	font-size: 0.7em;
+	vertical-align: middle;
 }
 
 @media (max-width: 1535px) {
-    .section {
-        min-height: 650px;
-    }
-    .section.game-1-section {
-        min-height: 700px;
-    }
-    .section-content {
-        width: 540px;
-    }
-    .section-title {
-        font-size: 44px;
-        line-height: 55px;
-        margin-bottom: 40px;
-    }
+	.section {
+		min-height: 650px;
+	}
+	.section.game-1-section {
+		min-height: 700px;
+	}
+	.section-content {
+		width: 540px;
+	}
+	.section-title {
+		font-size: 44px;
+		line-height: 55px;
+		margin-bottom: 40px;
+	}
 }
 
 @media (max-width: 1279px) {
-    .section {
-        min-height: 520px;
-    }
-    .section.game-1-section {
-        min-height: 700px;
-    }
-    .section-content {
-        width: 485px;
-    }
-    .section-title {
-        font-size: 40px;
-        line-height: 50px;
-    }
+	.section {
+		min-height: 520px;
+	}
+	.section.game-1-section {
+		min-height: 700px;
+	}
+	.section-content {
+		width: 485px;
+	}
+	.section-title {
+		font-size: 40px;
+		line-height: 50px;
+	}
 }
 
 @media (max-width: 1023px) {
-    .about-section {
-        padding: 90px 0 150px 0;
-    }
-    .section-content {
-        width: 430px;
-    }
-    .section-title {
-        font-size: 36px;
-        line-height: 50px;
-    }
+	.about-section {
+		padding: 90px 0 150px 0;
+	}
+	.section-content {
+		width: 430px;
+	}
+	.section-title {
+		font-size: 36px;
+		line-height: 50px;
+	}
 }
 
 @media (max-width: 599px) {
-    .container {
-        padding: 0 15px;
-    }
-    .about-section {
-        padding: 80px 0 180px 0;
-        background-image: url("../images/about-section-mobile-bg.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    .games-section {
-        padding: 80px 0 180px 0;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    .game-1-section {
-        background-image: url("../images/game-1-section-mobile-bg.png");
-    }
-    .section-content {
-        width: auto;
-    }
-    .section-title {
-        font-size: 24px;
-        line-height: 30px;
-        margin-bottom: 25px;
-    }
-    .games-section .section-title {
-        margin-top: 60px;
-    }
-    .section.about-section {
-        min-height: 410px;
-    }
-    .section {
-        min-height: 570px;
-    }
+	.container {
+		padding: 0 15px;
+	}
+	.about-section {
+		padding: 80px 0 180px 0;
+		background-image: url("../images/about-section-mobile-bg.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	.games-section {
+		padding: 80px 0 180px 0;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	.game-1-section {
+		background-image: url("../images/game-1-section-mobile-bg.png");
+	}
+	.section-content {
+		width: auto;
+	}
+	.section-title {
+		font-size: 24px;
+		line-height: 30px;
+		margin-bottom: 25px;
+	}
+	.games-section .section-title {
+		margin-top: 60px;
+	}
+	.section.about-section {
+		min-height: 410px;
+	}
+	.section {
+		min-height: 570px;
+	}
 }
 
 @media (max-width: 519px) {
-    .games-section.game-1-section {
-        background-size: 100% 100%;
-    }
+	.games-section.game-1-section {
+		background-size: 100% 100%;
+	}
 }
