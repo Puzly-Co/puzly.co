@@ -92,6 +92,18 @@ body.page-legal {
 	margin-right: 40;
 }
 
+.games-section .share-button {
+	display: block;
+	height: 60px;
+	width: 60px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 15px;
+	background: #9ddab5 url(/images/share-button.png);
+	background-size: contain;
+}
+
 .section-title span {
 	color: #292526;
 }

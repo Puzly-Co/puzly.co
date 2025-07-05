@@ -1,0 +1,21 @@
+<script>
+	const shareData = {
+					title: "{{include.shareTitle}}",
+					text: "{{include.shareText}}",
+					url: "{{include.shareUrl}}"
+				}
+
+	document.addEventListener("DOMContentLoaded", function() {
+		const btn = document.querySelector("button.share-button");
+
+		// Share must be triggered by "user activation"
+		btn.addEventListener("click", async () => {
+			try {
+				await navigator.share(shareData);
+				// shared successfully
+			} catch (err) {
+				// failed to share
+			}
+		})
+	});
+</script>
