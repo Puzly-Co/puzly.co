@@ -14,6 +14,7 @@ show_language_options: true
 <section id="games" class="section games-section game-1-section">
 	<div class="container">
 		<div class="section-content">
+			<div class="section-title">
 				Жаңы <span>Beş Harfli Kelime Oyunu</span> — тогуз оюнду бириктирген сөз табуучу оюн.
 			</div>
 			<div class="section-text">
