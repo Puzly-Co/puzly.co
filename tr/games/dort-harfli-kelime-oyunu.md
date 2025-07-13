@@ -9,6 +9,7 @@ show_language_options: true
 {% capture page_url %}{{ site.url }}{{ site.baseUrl }}{{ page.url }}{% endcapture %}
 {% capture game_title %}{{ page.title | remove: " - Puzly.Co" }}{% endcapture %}
 {% include share-script.html shareUrl=page_url shareText='Haydi bu harika bulmaca oyununu oynayalım!' shareTitle=game_title %}
+{% include mobile-os-script.html %}
 
 
 <section id="games" class="section games-section game-1-section">

@@ -6,6 +6,9 @@ show_language_options: true
 ---
 
 
+{% include mobile-os-script.html %}
+
+
 <section id="about" class="section about-section">
 	<div class="container">
 		<div class="section-content">

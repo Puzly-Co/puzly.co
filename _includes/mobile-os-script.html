@@ -1,0 +1,29 @@
+<script>
+	const getMobileOS = () => {
+		const ua = navigator.userAgent || navigator.vendor || window.opera;
+		var mobileOs = "unknown";
+
+		if (/android/i.test(ua)) {
+			mobileOs = "Android";
+		}
+		else if ((/iPad|iPhone|iPod/.test(ua) && !window.MSStream) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)){
+			mobileOs = "iOS";
+		}
+
+		return mobileOs;
+	}
+
+	document.addEventListener("DOMContentLoaded", function() {
+		const os = getMobileOS();
+
+		if (os == "iOS") {
+			const badgeElement = document.querySelector("a[href*='play.google.com']");
+			if (badgeElement) badgeElement.style.display = "none";
+		}
+
+		if (os == "Android") {
+			const badgeElement = document.querySelector("a[href*='apps.apple.com']")
+			if (badgeElement) badgeElement.style.display = "none";
+		}
+	});
+</script>
