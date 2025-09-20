@@ -1,1 +1,5 @@
+# OWNERDOMAIN represents the business domain of the site owner. It should appear once per file.
+OWNERDOMAIN=puzly.co
+
+# Google AdMob
 google.com, pub-7060571387148892, DIRECT, f08c47fec0942fa0
