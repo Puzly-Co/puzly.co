@@ -311,7 +311,7 @@
 		"Adorned; decorated. [Obs.] Milton."
 	],
 	"ADOWN": [
-		"From a higher to a lower situation; downward; down, to or on the ground. [Archaic] \"Thrice did she sink adown.\" Spenser.",
+		"An archaic word meaning 'down' or 'downward,' used as an adverb or preposition to show movement to a lower place, position, or level, stemming from Old English for 'off the hill' (of dūne). It implies a descent, often with a sense of finality or settling, like falling to the ground or a lower state.",
 		"Down. [Archaic & Poetic] Her hair adown her shoulders loosely lay displayed. Prior."
 	],
 	"ADRAD": [
@@ -2158,7 +2158,6 @@
 	],
 	"BEARD": [
 		"The hair that grows on the chin, lips, and adjacent parts of the human face, chiefly of male adults.",
-		"(Zool.)",
 		"The long hairs about the face in animals, as in the goat.",
 		"The cluster of small feathers at the base of the beak in some birds",
 		"The appendages to the jaw in some Cetacea, and to the mouth or jaws of some fishes.",
@@ -11504,6 +11503,8 @@
 		"See Gypsum. [Obs.] Pococke."
 	],
 	"GYPSY": [
+		"A member of a people originating in South Asia and traditionally having an itinerant way of life, living widely dispersed across Europe and North and South America and speaking a language (Romani) that is related to Hindi; a Romani person.",
+		"A nomadic or free-spirited person.",
 		"One of a vagabond race, whose tribes, coming originally from India, entered Europe in 14th or 15th centry, and are now scattered over Turkiye, Russia, Hungary, Spain, England, etc., living by theft, fortune telling, horsejockeying, tinkering, etc. Cf. Bohemian, Romany. Like a right gypsy, hath, at fast and loose, Beguiled me to the very heart of loss. Shak.",
 		"The language used by the gypsies. Shak.",
 		"A dark-complexioned person. Shak.",

@@ -609,7 +609,7 @@
 		"A magistrate in ancient Rome, who had the superintendence of public buildings, highways, shows, etc.; hence, a municipal officer."
 	],
 	"AEGEAN": [
-		"Of or pertaining to the sea, or arm of the Mediterranean sea, east of Greece. See Archipelago."
+		"Of or pertaining to the sea, or arm of the Mediterranean sea, between Greece and Turkiye. See Archipelago."
 	],
 	"AENEID": [
 		"The great epic poem of Virgil, of which the hero is Æneas."
@@ -2639,6 +2639,7 @@
 		"Any one of several species of Acacia, esp. A. Arabica, which yelds a gum used as a substitute for true gum arabic. In place of Putney's golden gorse The sickly babul blooms. Kipling."
 	],
 	"BABOON": [
+		"A large Old World ground-dwelling monkey with a long doglike snout and large teeth.",
 		"One of the Old World Quadrumana, of the genera Cynocephalus and Papio; the dog-faced ape. Baboons have dog-like muzzles and large canine teeth, cheek pouches, a short tail, and naked callosities on the buttocks. They are mostly African. See Mandrill, and Chacma, and Drill an ape."
 	],
 	"BACKED": [
@@ -5777,8 +5778,9 @@
 		"The principal grounds of a college or school, between the buildings or within the main inclosure; as, the college campus."
 	],
 	"CANADA": [
+		"Canada is a country in North America with ten provinces and three territories that extend from the Atlantic Ocean to the Pacific Ocean and northward into the Arctic Ocean, making Canada the second-largest country by total area, and the country with the longest coastline",
 		"A small cañon; a narrow valley or glen; also, but less frequently, an open valley. [Local, Western U. S.]",
-		"A British province in North America, giving its name to various plants and animals. Canada balsam. See under Balsam. -- Canada goose. (Zool.) See Whisky Jack. -- Canada lynx. (Zool.) See Lynx. -- Canada porcupine (Zool.) See Porcupine, and Urson. -- Canada rice (Bot.) See under Rick. -- Canada robin (Zool.), the cedar bird."
+		"Formerly, a British province in North America, giving its name to various plants and animals. Canada balsam. See under Balsam. -- Canada goose. (Zool.) See Whisky Jack. -- Canada lynx. (Zool.) See Lynx. -- Canada porcupine (Zool.) See Porcupine, and Urson. -- Canada rice (Bot.) See under Rick. -- Canada robin (Zool.), the cedar bird."
 	],
 	"CANAPE": [
 		"A sofa or divan.",
@@ -10167,8 +10169,8 @@
 		"A bower; a dingle. [Obs.] Drayton."
 	],
 	"DIMERA": [
-		"A division of Coleoptera, having two joints to the tarsi.",
-		"A division of the Hemiptera, including the aphids."
+		"(Chem. & Biol.) A division of Coleoptera, having two joints to the tarsi.",
+		"(Chem. & Biol.) A division of the Hemiptera, including the aphids."
 	],
 	"DIMISH": [
 		"See Dimmish."
@@ -23492,11 +23494,15 @@
 		"An intransitive verb.",
 		"(Biol.) An organism, either vegetable or animal, which at its maturity has no generative organs, or but imperfectly developed ones, as a plant without stamens or pistils, as the garden Hydrangea; esp., one of the imperfectly developed females of certain social insects, as of the ant and the common honeybee, which perform the labors of the community, and are called workers."
 	],
+	"NEWBIE": [
+		"An inexperienced newcomer to a particular activity."
+	],
 	"NEWING": [
 		"Yeast; barm. [prov. Eng.]"
 	],
 	"NEWISH": [
-		"Somewhat new; nearly new. Bacon."
+		"Slightly new.",
+		"Somewhat new; nearly new."
 	],
 	"NIBBED": [
 		"Having a nib or point."
@@ -39362,6 +39368,7 @@
 		"A vigil. [Obs.] Chaucer."
 	],
 	"VIKING": [
+		"Any of the Scandinavian seafaring pirates and traders who raided and settled in many parts of north-western Europe in the 8th-11th centuries.",
 		"One belonging to the pirate crews from among the Northmen, who plundered the coasts of Europe in the eighth, ninth, and tenth centuries. Of grim Vikings, and the rapture Of the sea fight, and the capture, And the life of slavery. Longfellow. Note: Vikings differs in meaning from sea king, with which frequently confounded. \"The sea king was a man connected with a royal race, either of the small kings of the country, or of the Haarfager family, and who, by right, received the title of king as soon he took the command of men, although only of a single ship's crew, and without having any land or kingdom... Vikings were merely pirates, alternately peasants and pirates, deriving the name of viking from the vicks, wicks, or inlets, on the coast in which they harbored with their long ships or rowing galleys.\" Laing."
 	],
 	"VILANY": [
@@ -39717,7 +39724,8 @@
 		"See Valkyria."
 	],
 	"WALLAH": [
-		"A black variety of the jaguar; -- called also tapir tiger. [Written also walla.]"
+		"A black variety of the jaguar; -- called also tapir tiger. [Written also walla.]",
+		"A person concerned or involved with a specified thing or business."
 	],
 	"WALLER": [
 		"One who builds walls.",
